@@ -1,7 +1,7 @@
 function About() {
   return (
     <div
-      className="text-zinc rounded-md border-[1px] border-zinc-300 bg-zinc-800 p-4 text-lg
+      className="text-zinc rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-4 text-lg
         sm:text-xl"
     >
       <p className="mb-5">

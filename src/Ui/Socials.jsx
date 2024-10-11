@@ -17,7 +17,7 @@ function Socials() {
   const hoverStyles = "transition-all duration-300 hover:text-zinc-400";
 
   return (
-    <div className="flex gap-3 text-2xl sm:gap-5 sm:text-3xl">
+    <div className="flex gap-3 text-xl sm:gap-5 sm:text-3xl">
       <div className="flex gap-1 sm:gap-2.5">
         {socialsLinks.map(({ logo, name, link }) => {
           return (

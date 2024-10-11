@@ -19,10 +19,10 @@ function NavBar() {
 
   return (
     <div className="fixed bottom-5 flex w-full justify-center">
-      <nav className="flex items-center justify-center gap-4">
+      <nav className="z-[999] flex items-center justify-center gap-4">
         <ul
-          className="flex items-center gap-1 rounded-md border-[1px] border-zinc-700 bg-zinc-800
-            font-semibold"
+          className="z-[999] flex items-center gap-1 rounded-md border-[1px] border-zinc-700
+            bg-zinc-800 font-semibold"
         >
           {nav.map(({ name, icon, link }) => {
             return (
