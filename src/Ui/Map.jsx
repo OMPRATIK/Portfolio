@@ -1,15 +1,23 @@
 import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Time from "./Time";
+import { useEffect } from "react";
 
+const position = [31.3223714, 75.4910179];
 
 function LocationMarker() {
   const map = useMap();
-  const position = [31.3223714, 75.4910179];
 
-  setTimeout(function () {
-    map.flyTo(position, 9, [0, 0]);
-  }, 2000);
+  useEffect(
+    function () {
+      const timeOut = setTimeout(function () {
+        map.flyTo(position, 9, [0, 0]);
+      }, 2000);
+
+      return () => clearTimeout(timeOut);
+    },
+    [map],
+  );
 
   return <Marker position={position}></Marker>;
 }

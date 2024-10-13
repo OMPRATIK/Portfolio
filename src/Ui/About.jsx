@@ -19,12 +19,9 @@ function About() {
           🚀
         </li>
       </ul>
-      <div>
-        <h2 className="text-4xl font-semibold">
-          <span className="text-5xl text-yellow-500">+</span>500
-        </h2>
-        <h2></h2>
-      </div>
+      {/* <div>
+        <img src="https://leetcard.jacoblin.cool/OMPRATIK?theme=dark" />
+      </div> */}
     </div>
   );
 }

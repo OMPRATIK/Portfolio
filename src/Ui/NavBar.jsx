@@ -1,7 +1,8 @@
 import { HiPencilAlt } from "react-icons/hi";
 import { IoHome, IoPerson } from "react-icons/io5";
-import { MdArticle, MdLightMode } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { MdArticle } from "react-icons/md";
+import { NavLink, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const nav = [
   { name: "Home", icon: <IoHome />, link: "/" },
@@ -11,14 +12,11 @@ const nav = [
 ];
 
 function NavBar() {
-  const base =
-    "flex items-center gap-1.5 rounded-md px-2 py-1 hover:bg-zinc-300 hover:text-zinc-800 transition-colors duration-300";
-
-  const setActive = ({ isActive }) =>
-    isActive ? "bg-zinc-300 text-zinc-800 " + base : base;
-
+  const location = useLocation();
+  const activeTab = location.pathname;
+  const base = "relative flex items-center gap-1.5 rounded-md px-2 py-1";
   return (
-    <div className="fixed bottom-5 flex w-full justify-center">
+    <div className="fixed bottom-5 z-[999] flex w-full justify-center">
       <nav className="z-[999] flex items-center justify-center gap-4">
         <ul
           className="z-[999] flex items-center gap-1 rounded-md border-[1px] border-zinc-700
@@ -27,17 +25,30 @@ function NavBar() {
           {nav.map(({ name, icon, link }) => {
             return (
               <li className="flex gap-1 rounded-md px-2 py-2" key={name}>
-                <NavLink to={link} className={setActive}>
-                  {icon}
-                  <span className="hidden sm:block">{name}</span>
+                <NavLink
+                  to={link}
+                  className={`${activeTab === link ? "text-zinc-800 " + base : base}`}
+                >
+                  {activeTab === link && (
+                    <motion.div
+                      layoutId="active-tab"
+                      transition={{
+                        type: "spring",
+                        bounce: 0.2,
+                        duration: 0.6,
+                      }}
+                      className="absolute inset-0 rounded-md bg-zinc-300"
+                    />
+                  )}
+                  <div className="relative flex items-center gap-1.5 hover:text-zinc-400">
+                    {icon}
+                    <span className="hidden sm:block">{name}</span>
+                  </div>
                 </NavLink>
               </li>
             );
           })}
         </ul>
-        <span className="text-3xl hover:cursor-pointer">
-          <MdLightMode />
-        </span>
       </nav>
     </div>
   );
