@@ -22,14 +22,14 @@ function NavBar() {
       <nav className="z-[999] flex items-center justify-center gap-4">
         <ul
           className="z-[999] flex items-center gap-1 rounded-md border-[1px] border-zinc-700
-            bg-zinc-800 font-semibold"
+            bg-zinc-900 font-semibold"
         >
           {nav.map(({ name, icon, link }) => {
             return (
               <li className="flex gap-1 rounded-md px-2 py-2" key={name}>
                 <NavLink to={link} className={setActive}>
                   {icon}
-                  <span className="hidden md:block">{name}</span>
+                  <span className="hidden sm:block">{name}</span>
                 </NavLink>
               </li>
             );

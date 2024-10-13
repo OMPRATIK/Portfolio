@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 
 const socialsLinks = [
   { logo: <FaGithub />, name: "Github", link: "" },
-  { logo: <FaSquareXTwitter />, name: "X", link: "" },
   { logo: <FaLinkedin />, name: "Linkedin", link: "" },
-  { logo: <PiInstagramLogoFill />, name: "Instagram", link: "" },
   { logo: <SiLeetcode />, name: "Leetcode", link: "" },
   { logo: <FaHackerrank />, name: "Hackerrank", link: "" },
+  { logo: <FaSquareXTwitter />, name: "X", link: "" },
+  { logo: <PiInstagramLogoFill />, name: "Instagram", link: "" },
 ];
 
 function Socials() {
   const hoverStyles = "transition-all duration-300 hover:text-zinc-400";
 
   return (
-    <div className="flex gap-3 text-xl sm:gap-5 sm:text-3xl">
+    <div className="flex gap-3 text-base sm:gap-5 sm:text-2xl">
       <div className="flex gap-1 sm:gap-2.5">
         {socialsLinks.map(({ logo, name, link }) => {
           return (

@@ -2,6 +2,7 @@ import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Time from "./Time";
 
+
 function LocationMarker() {
   const map = useMap();
   const position = [31.3223714, 75.4910179];
@@ -17,6 +18,7 @@ function Map() {
   return (
     <div className="relative h-32 sm:h-52">
       <Time />
+
       <div
         className="absolute z-[999] h-full w-full bg-gradient-to-b from-zinc-500/5 via-zinc-900/20
           to-zinc-900"

@@ -1,24 +1,49 @@
-import { FaCalendar } from "react-icons/fa";
+import { FaCalendar, FaFileAlt } from "react-icons/fa";
 import ProfilePhoto from "./ProfilePhoto";
-import Socials from "./Socials";
+import { Link } from "react-router-dom";
+import { IoPersonAdd } from "react-icons/io5";
+import ShinyButton from "../components/ShinyButton";
 
 function User() {
   return (
-    <section className="flex justify-between px-2 sm:px-6">
-      <div className="flex justify-between gap-4">
-        <div className="z-[999] translate-y-[-10px]">
-          <h1 className="mb-2 text-2xl font-semibold sm:text-4xl">
-            Hi, It&apos;s <span className="text-yellow-500">Pratik</span>👋
+    <section className="relative mb-2 flex flex-col justify-between px-2 sm:mb-0 sm:h-20 sm:flex-row">
+      {/* <Status>Available For Work</Status> */}
+      {/* <p className="absolute right-5 top-1 flex items-center gap-1 text-xs text-zinc-400 sm:hidden">
+        <IoLocationSharp /> Punjab, India
+      </p> */}
+      <div className="flex h-14 gap-2 sm:h-0 sm:gap-4">
+        <ProfilePhoto />
+        <div className="z-[999] translate-y-[-25px]">
+          <h1 className="text-xl font-semibold sm:text-3xl">
+            <span className="text-yellow-400">Pratik</span> Rout
+            <span>🙎‍♂️</span>
           </h1>
-          <Socials />
-        </div>
-        <div className="flex items-center justify-center gap-2 text-xs opacity-50">
-          <FaCalendar />
-          <span>5 June 2004</span>
+
+          <div>
+            <p className="text-sm text-zinc-400 sm:text-base">
+              Full-stack Developer
+            </p>
+
+            <p className="flex items-center gap-2 text-xs text-zinc-400 sm:text-sm">
+              <FaCalendar /> 5 June 2004
+            </p>
+          </div>
         </div>
       </div>
+      <div className="z-[999] flex items-start gap-2 font-semibold sm:text-xl">
+        <ShinyButton>
+          <span className="flex items-center gap-2 rounded-md bg-zinc-950 px-3 py-[5px]">
+            <IoPersonAdd /> Hire me
+          </span>
+        </ShinyButton>
 
-      <ProfilePhoto />
+        <Link
+          className="flex items-center gap-2 rounded-md bg-zinc-300 px-3 py-1 text-zinc-800
+            hover:bg-zinc-400"
+        >
+          <FaFileAlt /> Resume
+        </Link>
+      </div>
     </section>
   );
 }

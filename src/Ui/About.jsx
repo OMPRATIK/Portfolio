@@ -1,8 +1,8 @@
 function About() {
   return (
     <div
-      className="text-zinc rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-4 text-lg
-        sm:text-xl"
+      className="text-zinc rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-4 text-sm
+        sm:text-base"
     >
       <p className="mb-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea
