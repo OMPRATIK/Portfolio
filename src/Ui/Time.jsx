@@ -6,6 +6,7 @@ const options = {
   minute: "numeric",
   second: "numeric",
   hour12: true,
+  timeZone: "Asia/Kolkata",
 };
 
 function Time() {
@@ -26,7 +27,7 @@ function Time() {
         bg-zinc-950 px-2 py-1 text-xs opacity-80 sm:text-base"
     >
       <span>
-        {(hours >= 16 && hours <= 24) || (hours >= 1 && hours <= 3) ? (
+        {(hours >= 20 && hours <= 24) || (hours >= 1 && hours <= 3) ? (
           <FaCloudMoon />
         ) : (
           <FaCloudSun />

@@ -11,10 +11,10 @@ function User() {
       {/* <p className="absolute right-5 top-1 flex items-center gap-1 text-xs text-zinc-400 sm:hidden">
         <IoLocationSharp /> Punjab, India
       </p> */}
-      <div className="flex h-14 gap-2 sm:h-0 sm:gap-4">
+      <div className="flex h-14 gap-3 sm:h-0 sm:gap-4">
         <ProfilePhoto />
         <div className="z-[999] translate-y-[-25px]">
-          <h1 className="text-xl font-semibold sm:text-3xl">
+          <h1 className="text-2xl font-semibold sm:text-3xl">
             <span className="text-yellow-400">Pratik</span> Rout
             <span>🙎‍♂️</span>
           </h1>

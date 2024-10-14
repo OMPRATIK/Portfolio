@@ -35,12 +35,15 @@ function NavBar() {
                       transition={{
                         type: "spring",
                         bounce: 0.2,
-                        duration: 0.6,
+                        duration: 0.4,
                       }}
                       className="absolute inset-0 rounded-md bg-zinc-300"
                     />
                   )}
-                  <div className="relative flex items-center gap-1.5 hover:text-zinc-400">
+                  <div
+                    className={`relative flex items-center gap-1.5 ${ activeTab !== link &&
+                    "hover:text-zinc-400" }`}
+                  >
                     {icon}
                     <span className="hidden sm:block">{name}</span>
                   </div>

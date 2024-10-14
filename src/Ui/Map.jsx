@@ -24,7 +24,7 @@ function LocationMarker() {
 
 function Map() {
   return (
-    <div className="relative h-32 sm:h-52">
+    <section className="relative h-32 sm:h-52">
       <Time />
 
       <div
@@ -43,7 +43,7 @@ function Map() {
         />
         <LocationMarker />
       </MapContainer>
-    </div>
+    </section>
   );
 }
 
