@@ -14,6 +14,7 @@ const nav = [
 function NavBar() {
   const location = useLocation();
   const activeTab = location.pathname;
+
   const base = "relative flex items-center gap-1.5 rounded-md px-2 py-1";
   return (
     <div className="fixed bottom-5 z-[999] flex w-full justify-center">
@@ -35,7 +36,7 @@ function NavBar() {
                       transition={{
                         type: "spring",
                         bounce: 0.2,
-                        duration: 0.4,
+                        duration: 0.5,
                       }}
                       className="absolute inset-0 rounded-md bg-zinc-300"
                     />

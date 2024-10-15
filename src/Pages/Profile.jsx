@@ -1,7 +1,5 @@
-import PageTransition from "../components/PageTransition";
-
 function Profile() {
-  return <PageTransition>Profile</PageTransition>;
+  return <div>Profile</div>;
 }
 
 export default Profile;

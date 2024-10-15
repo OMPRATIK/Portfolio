@@ -9,6 +9,10 @@
   transition: all 0.3s;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .leaflet-control-zoom,
 .leaflet-control-attribution {
   display: none;

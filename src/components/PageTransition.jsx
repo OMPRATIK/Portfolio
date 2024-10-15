@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
 const pageTransitionVariants = {
-  hidden: { opacity: 0, y: 50 }, // Initial state (invisible, moved down)
-  visible: { opacity: 1, y: 0 }, // Final state (visible, in original position)
-  exit: { opacity: 0, y: -50 }, // On page exit (invisible, moved up)
+  hidden: { opacity: 0, filter: "blur(10px)" },
+  visible: { opacity: 1, filter: "blur(0px)" },
+  exit: { opacity: 0 },
 };
 
 function PageTransition({ children }) {
@@ -14,7 +14,7 @@ function PageTransition({ children }) {
       initial="hidden"
       animate="visible"
       exit="exit"
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.3 }}
     >
       {children}
     </motion.div>

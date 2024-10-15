@@ -10,19 +10,20 @@ function UpcomingPlans() {
           sm:p-4 sm:text-xl"
       >
         <p>
-          Learn DevOps and integrate it into my full-stack projects to enhance
-          efficiency and scalability.
+          Learn <span className="font-bold">DevOps</span> and integrate it into
+          my full-stack projects to enhance efficiency and scalability.
         </p>
         <div className="my-0.5s border-[1px] border-zinc-500 sm:my-1"> </div>
         <p>
-          Learn learn React Native and Expo to build a mobile app focused on
-          fitness and food.
+          Learn learn <span className="font-bold">React Native</span> and{" "}
+          <span className="font-bold">Expo</span> to build a mobile app focused
+          on fitness and food.
         </p>
 
         <div className="my-0.5s border-[1px] border-zinc-500 sm:my-1" />
         <p>
-          Learn Go and build backend projects to enhance my understanding of
-          scalable and high-performance systems.
+          Learn <span className="font-bold">Go</span> and build backend projects
+          to enhance my understanding of scalable and high-performance systems.
         </p>
         <div className="my-0.5s border-[1px] border-zinc-500 sm:my-1" />
         <p>

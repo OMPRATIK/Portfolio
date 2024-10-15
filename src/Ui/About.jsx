@@ -24,30 +24,20 @@ function About() {
       <div className="flex flex-col gap-1.5 sm:gap-3 sm:text-xl">
         <p>
           I am a pre-final year{" "}
-          <span className="font-semibold text-yellow-400">
-            Computer Science
-          </span>{" "}
-          student and a{" "}
-          <span className="font-semibold text-yellow-400">
-            Full-stack developer
-          </span>
-          . Primarily focused on frontend technologies like React, I also excel
-          in backend development using Node.js, Bun and Go.
+          <span className="font-bold">Computer Science</span> student and a{" "}
+          <span className="font-bold">Full-stack developer</span>. Primarily
+          focused on frontend technologies like React, I also excel in backend
+          development using Node.js, Bun and Go.
         </p>
         <p>
           I have a strong foundation in problem-solving and Data Structures and
-          Algorithms. I have tackled over{" "}
-          <span className="font-semibold text-yellow-400">500</span> questons on
-          Leetcode.
+          Algorithms. I have tackled over <span className="font-bold">500</span>{" "}
+          questons on Leetcode.
         </p>
         <p>
-          I have a keen interest in{" "}
-          <span className="font-semibold text-yellow-400">Devops</span>{" "}
-          practices and{" "}
-          <span className="font-semibold text-yellow-400">
-            mobile development
-          </span>
-          , continuously exploring new tools and techniques to enhance my skill
+          I have a keen interest in <span className="font-bold">Devops</span>{" "}
+          practices and <span className="font-bold">mobile development</span>,
+          continuously exploring new tools and techniques to enhance my skill
           set and deliver efficient, scalable applications.
         </p>
       </div>
