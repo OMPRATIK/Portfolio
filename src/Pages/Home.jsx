@@ -12,8 +12,8 @@ function Home() {
       <User />
       <About />
       <Skills />
-      <UpcomingPlans />
       <PinnedProjects />
+      <UpcomingPlans />
     </>
   );
 }

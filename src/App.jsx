@@ -4,13 +4,14 @@ import AppLayout from "./Ui/AppLayout";
 import Blogs from "./Pages/Blogs";
 import Projects from "./Pages/Projects";
 import Profile from "./Pages/Profile";
-import { AnimatePresence } from "framer-motion";
+import NavBar from "./Ui/NavBar";
 
 function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait" initial={true}>
+    <>
+      <NavBar />
       <Routes location={location} key={location.pathname}>
         <Route element={<AppLayout />}>
           <Route index element={<Home />} />
@@ -19,7 +20,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
         </Route>
       </Routes>
-    </AnimatePresence>
+    </>
   );
 }
 

@@ -17,7 +17,7 @@ function NavBar() {
 
   const base = "relative flex items-center gap-1.5 rounded-md px-2 py-1";
   return (
-    <div className="fixed bottom-5 z-[999] flex w-full justify-center">
+    <div className="fixed bottom-5 left-0 right-0 z-[999] flex w-full justify-center">
       <nav className="z-[999] flex items-center justify-center gap-4">
         <ul
           className="z-[999] flex items-center gap-1 rounded-md border-[1px] border-zinc-700
@@ -32,13 +32,14 @@ function NavBar() {
                 >
                   {activeTab === link && (
                     <motion.div
-                      layoutId="active-tab"
+                      // layoutId="active-tab"
+                      layoutId="bubble"
                       transition={{
                         type: "spring",
                         bounce: 0.2,
-                        duration: 0.5,
+                        duration: 0.6,
                       }}
-                      className="absolute inset-0 rounded-md bg-zinc-300"
+                      className="absolute inset-0 rounded-md bg-zinc-300 mix-blend-difference"
                     />
                   )}
                   <div

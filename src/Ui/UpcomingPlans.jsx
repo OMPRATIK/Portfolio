@@ -1,10 +1,23 @@
-import { FaPaperPlane } from "react-icons/fa";
+import { FaExternalLinkAlt, FaPaperPlane } from "react-icons/fa";
 import SubHeading from "../components/SubHeading";
+import { Link } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
 
 function UpcomingPlans() {
   return (
-    <section className="mb-6">
-      <SubHeading heading="Upcoming Plans" icon={<FaPaperPlane />} />
+    <section className="mb-6 sm:mb-10">
+      <div className="mb-1.5 flex items-center justify-between sm:mb-3">
+        <SubHeading heading="Upcoming Plans" icon={<FaPaperPlane />} />
+        <Link
+          className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 sm:text-base"
+          to="/projects"
+        >
+          <span className="flex items-center gap-1">
+            More on <FaXTwitter className="text-xs" />
+          </span>
+          <FaExternalLinkAlt className="text-xs" />
+        </Link>
+      </div>
       <div
         className="flex flex-col gap-3 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
           sm:p-4 sm:text-xl"

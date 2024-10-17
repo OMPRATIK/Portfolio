@@ -28,8 +28,8 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-import PropTypes from "prop-types";
 import SubHeading from "../components/SubHeading";
+import Skill from "./Skill";
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 /> },
@@ -41,17 +41,17 @@ const skills = [
   { name: "Python", icon: <FaPython /> },
   { name: "React", icon: <FaReact /> },
   { name: "Tailwindcss", icon: <RiTailwindCssFill /> },
-  { name: "Redux-toolkit", icon: <SiRedux /> },
+  { name: "Axios", icon: <SiAxios /> },
   { name: "React-router", icon: <SiReactrouter /> },
+  { name: "Redux-toolkit", icon: <SiRedux /> },
   { name: "Styled-components", icon: <SiStyledcomponents /> },
   { name: "Tanstack-query", icon: <SiReactquery /> },
   { name: "React-hook-form", icon: <SiReacthookform /> },
-  { name: "Axios", icon: <SiAxios /> },
   { name: "Node.js", icon: <FaNodeJs /> },
   { name: "Express JS", icon: <SiExpress /> },
   { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
   { name: "Mongoose", icon: <SiMongoose /> },
+  { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
   { name: "Github", icon: <FaGithub /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "Supabase", icon: <RiSupabaseFill /> },
@@ -60,9 +60,11 @@ const skills = [
 
 function Skills() {
   return (
-    <section className="mb-6">
-      <SubHeading heading="Skills And Tools" icon={<FaTools />} />
-      <div className="flex flex-wrap gap-2 text-sm sm:text-base">
+    <section className="mb-6 sm:mb-10">
+      <div className="mb-1.5 sm:mb-3">
+        <SubHeading heading="Skills And Tools" icon={<FaTools />} />
+      </div>
+      <div className="flex flex-wrap gap-2 text-sm sm:text-xl">
         {skills.map(({ name, icon }) => (
           <Skill name={name} icon={icon} key={name} />
         ))}
@@ -70,22 +72,5 @@ function Skills() {
     </section>
   );
 }
-
-function Skill({ name, icon }) {
-  return (
-    <div
-      className="flex items-center justify-center gap-2 rounded-md border-[1px] border-zinc-700
-        bg-zinc-800 px-3 py-1"
-    >
-      <span className="text-xl">{icon}</span>
-      {name}
-    </div>
-  );
-}
-
-Skill.propTypes = {
-  name: PropTypes.string,
-  icon: PropTypes.any,
-};
 
 export default Skills;
