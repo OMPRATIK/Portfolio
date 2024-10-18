@@ -160,7 +160,7 @@ function PinnedProjects() {
                       <img
                         src={image}
                         alt="Pinned project logo"
-                        className="h-36 w-36 rounded-md"
+                        className="h-24 w-24 rounded-md sm:h-36 sm:w-36"
                       />
 
                       <div>
