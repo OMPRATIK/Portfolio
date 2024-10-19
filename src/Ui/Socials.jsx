@@ -9,7 +9,6 @@ const socialsLinks = [
   { logo: <FiGithub />, name: "Github", link: "" },
   { logo: <SlSocialLinkedin />, name: "Linkedin", link: "" },
   { logo: <SiLeetcode />, name: "Leetcode", link: "" },
-  // { logo: <FaHackerrank />, name: "Hackerrank", link: "" },
   { logo: <FaXTwitter />, name: "X", link: "" },
   { logo: <FaInstagram />, name: "Instagram", link: "" },
 ];
@@ -23,7 +22,7 @@ function Socials() {
             <Link
               to={link}
               key={name}
-              className="text-zinc-50 transition-all duration-300 hover:text-zinc-400"
+              className="text-zinc-50 hover:text-blue-400"
             >
               {logo}
             </Link>

@@ -8,6 +8,7 @@ function UpcomingPlans() {
     <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
         <SubHeading heading="Upcoming Plans" icon={<FaPaperPlane />} />
+
         <Link
           className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 sm:text-base"
           to="/projects"

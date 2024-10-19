@@ -1,5 +1,13 @@
+import Github from "../Ui/Github";
+import Leetcode from "../Ui/Leetcode";
+
 function Profile() {
-  return <div>Profile</div>;
+  return (
+    <>
+      <Leetcode />
+      <Github />
+    </>
+  );
 }
 
 export default Profile;

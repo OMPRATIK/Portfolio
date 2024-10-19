@@ -2,7 +2,7 @@ import { motion, useMotionValue } from "framer-motion";
 import { TbBrandThreejs, TbPinnedFilled } from "react-icons/tb";
 import SubHeading from "../components/SubHeading";
 import VirtualGarden from "../assets/PinnedProjects/VirtualGarden.png";
-import { FaExternalLinkAlt, FaReact } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import Skill from "./Skill";
 import {
   SiAxios,
@@ -126,7 +126,7 @@ function PinnedProjects() {
           to="/projects"
         >
           <span>More Projects</span>
-          <FaExternalLinkAlt className="text-xs" />
+          <span className="text-xl">&rarr;</span>
         </Link>
       </div>
       <div className="overflow-hidden">
