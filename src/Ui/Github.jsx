@@ -20,14 +20,28 @@ function Github() {
         className="flex flex-col gap-2 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
           sm:gap-4 sm:p-4"
       >
-        <div>
-          <a href="https://git.io/streak-stats">
-            <img
-              src="https://streak-stats.demolab.com?user=OMPRATIK&background=18181b&hide_border=true&border_radius=6&currStreakNum=d4d4d8&dates=a1a1aa&sideNums=d4d4d8&sideLabels=fb923c"
-              alt="GitHub Streak"
-              className="w-full sm:w-[60%]"
-            />
-          </a>
+        <div className="flex gap-2.5">
+          <img
+            src="https://streak-stats.demolab.com?user=OMPRATIK&background=18181b&hide_border=true&border_radius=6&currStreakNum=d4d4d8&dates=a1a1aa&sideNums=d4d4d8&sideLabels=f59e0b"
+            alt="GitHub Streak"
+            className="w-full sm:w-[60%]"
+          />
+          <div className="hidden flex-col justify-between sm:flex">
+            <p className="p-2 text-zinc-400">
+              My Github showcases a diverse range of projects, from frontend,
+              backend to full-stack web applications
+            </p>
+
+            <div className="flex justify-end">
+              <Link
+                className="flex items-center gap-1.5 text-sm text-blue-500 hover:text-blue-400 sm:text-base"
+                to="/projects"
+              >
+                <span>Explore projects</span>
+                <span className="text-xl">&rarr;</span>
+              </Link>
+            </div>
+          </div>
         </div>
         <div>
           <img

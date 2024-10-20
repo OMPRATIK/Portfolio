@@ -1,3 +1,4 @@
+import Certificates from "../Ui/Certificates";
 import Github from "../Ui/Github";
 import Leetcode from "../Ui/Leetcode";
 
@@ -6,6 +7,7 @@ function Profile() {
     <>
       <Leetcode />
       <Github />
+      <Certificates />
     </>
   );
 }

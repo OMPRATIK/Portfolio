@@ -21,7 +21,7 @@ function Leetcode() {
         className="flex flex-col gap-0 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
           sm:gap-2 sm:p-4"
       >
-        <div className="flex flex-col gap-2.5 sm:flex-row">
+        <div className="flex gap-2.5">
           <img
             src="https://leetcard.jacoblin.cool/OMPRATIK?border=0&theme=transparent&font=inconsolata&ext=heatmap"
             className="w-full sm:w-[60%]"
