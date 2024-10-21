@@ -1,6 +1,5 @@
 import { motion, useMotionValue } from "framer-motion";
 import PropTypes from "prop-types";
-import { useState } from "react";
 
 const DRAG_BUFFER = 50;
 
@@ -11,8 +10,15 @@ const SPRING_OPTIONS = {
   damping: 50,
 };
 
-function Carousel({ children, size, items, numItemInFrame }) {
-  const [itemIdx, setItemIdx] = useState(0);
+function Carousel({
+  children,
+  size,
+  items,
+  numItemInFrame,
+  setItemIdx,
+  itemIdx,
+}) {
+  // const [itemIdx, setItemIdx] = useState(0);
   const dragX = useMotionValue(0);
 
   const onDragEnd = () => {
@@ -38,7 +44,7 @@ function Carousel({ children, size, items, numItemInFrame }) {
             x: dragX,
           }}
           animate={{
-            translateX: `-${(itemIdx / numItemInFrame) * 95}%`, // Keep this unchanged
+            translateX: `-${(itemIdx / numItemInFrame) * 96.5}%`,
           }}
           transition={SPRING_OPTIONS}
           onDragEnd={onDragEnd}
@@ -88,6 +94,8 @@ Carousel.propTypes = {
   size: PropTypes.number,
   items: PropTypes.array,
   numItemInFrame: PropTypes.number,
+  itemIdx: PropTypes.number,
+  setItemIdx: PropTypes.func,
 };
 
 export default Carousel;

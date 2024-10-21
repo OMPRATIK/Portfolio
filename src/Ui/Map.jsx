@@ -25,9 +25,9 @@ function Map() {
           setTimeout(() => {
             mapInstance.target.flyTo(position, 9, {
               animate: true,
-              duration: 3,
+              duration: 3.5,
             });
-          }, 2000);
+          }, 3000);
         }}
       >
         <TileLayer

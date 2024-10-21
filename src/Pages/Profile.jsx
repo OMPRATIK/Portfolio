@@ -5,8 +5,9 @@ import Leetcode from "../Ui/Leetcode";
 function Profile() {
   return (
     <>
-      <Leetcode />
+      {/* <AboutProfile /> */}
       <Github />
+      <Leetcode />
       <Certificates />
     </>
   );

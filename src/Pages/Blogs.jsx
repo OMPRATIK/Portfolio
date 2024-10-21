@@ -1,11 +1,6 @@
-import Socials from "../Ui/Socials";
-
 function Blogs() {
   return (
-    <div className="">
-      <Socials />
-      <p>Hellow </p>
-    </div>
+    <div className="flex h-screen items-center justify-center">working...</div>
   );
 }
 

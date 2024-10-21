@@ -27,6 +27,7 @@ import { MdLink, MdLinkOff, MdOutlinePreview } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
+import { useState } from "react";
 
 const pinnedProjects = [
   {
@@ -86,6 +87,8 @@ const pinnedProjects = [
 ];
 
 function PinnedProjects() {
+  const [itemIdx, setItemIdx] = useState(0);
+
   return (
     <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
@@ -104,6 +107,8 @@ function PinnedProjects() {
         numItemInFrame={1}
         items={pinnedProjects}
         size={pinnedProjects.length}
+        setItemIdx={setItemIdx}
+        itemIdx={itemIdx}
       >
         {pinnedProjects.map(
           ({ name, image, status, contributors, description, skills }) => {
