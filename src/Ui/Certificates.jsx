@@ -108,7 +108,7 @@ function Certificates() {
           return (
             <div
               key={name}
-              className={`flex ${numItemInFrame === 2 ? "w-[47.5%]" : "w-[95%]"} shrink-0 flex-col gap-2
+              className={`flex ${numItemInFrame === 2 ? "w-[47.5%]" : "w-[94%]"} shrink-0 flex-col gap-2
               rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2 sm:p-4`}
             >
               <div className="overflow-hidden">

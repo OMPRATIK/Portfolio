@@ -44,7 +44,7 @@ function Carousel({
             x: dragX,
           }}
           animate={{
-            translateX: `-${(itemIdx / numItemInFrame) * 96.5}%`,
+            translateX: `-${(itemIdx / numItemInFrame) * 96}%`,
           }}
           transition={SPRING_OPTIONS}
           onDragEnd={onDragEnd}
