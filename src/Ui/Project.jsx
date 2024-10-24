@@ -43,19 +43,19 @@ function Project({
                 {status === "onProgress" && <OnProgress />}
               </div>
 
-              <p className="mb-2 hidden text-zinc-400 sm:block">
+              <p className="mb-2 hidden text-zinc-300 sm:block">
                 {description}
               </p>
             </div>
           </div>
         </div>
-        <p className="mb-2 text-zinc-400 sm:hidden">{description}</p>
+        <p className="mb-2 text-zinc-300 sm:hidden">{description}</p>
 
         <div>
           {contributors && (
             <div className="mb-3 flex flex-col sm:flex-row sm:gap-2">
               <h4 className="font-semibold">Contributors</h4>
-              <ul className="flex flex-wrap items-center gap-1 text-sm text-zinc-400">
+              <ul className="flex flex-wrap items-center gap-1 text-sm text-zinc-300/70">
                 {contributors.join(", ")}
               </ul>
             </div>

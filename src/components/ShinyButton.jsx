@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-function ShinyButton({ children }) {
+function ShinyButton({ children, onClick }) {
   return (
     <motion.button
       initial={{ "--x": "100%", scale: 1 }}
@@ -22,6 +22,7 @@ function ShinyButton({ children }) {
           mass: 0.1,
         },
       }}
+      onClick={onClick}
       className="radial-gradient relative rounded-md"
     >
       <span
@@ -37,6 +38,7 @@ function ShinyButton({ children }) {
 
 ShinyButton.propTypes = {
   children: PropTypes.any,
+  onClick: PropTypes.func,
 };
 
 export default ShinyButton;

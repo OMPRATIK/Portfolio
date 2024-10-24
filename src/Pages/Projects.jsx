@@ -1,23 +1,26 @@
-import { GrProjects } from "react-icons/gr";
 import SubHeading from "../components/SubHeading";
 import { useState } from "react";
 
-const options = ["Front-end", "Back-end", "Full-stack"];
+const options = ["All", "Front-end", "Back-end", "Full-stack"];
 
 import projects from "../data/projects";
 import Project from "../Ui/Project";
+import { GoProjectRoadmap } from "react-icons/go";
 function Projects() {
-  const [op, setOp] = useState("full-stack");
+  const [op, setOp] = useState("All");
+
+  const filteredProjects =
+    op === "All" ? projects : projects.filter((project) => project.type === op);
 
   return (
     <div className="mt-5 sm:mt-10">
       <div className="mb-5 flex items-center justify-between">
-        <SubHeading heading={"Projects"} icon={<GrProjects />} />
+        <SubHeading heading={"Projects"} icon={<GoProjectRoadmap />} />
         <select
           value={op}
           onChange={(e) => setOp(e.target.value)}
-          className="rounded-md border-[1px] border-zinc-700 bg-zinc-800 px-2 py-1 text-zinc-400
-            focus:outline-none focus:ring-[0.5px] focus:ring-zinc-600"
+          className="cursor-pointer rounded-md border-[1px] border-zinc-700 bg-zinc-800 px-2 py-1
+            text-zinc-400 focus:outline-none focus:ring-[0.5px] focus:ring-zinc-600"
         >
           {options.map((option) => (
             <option key={option} value={option}>
@@ -28,7 +31,7 @@ function Projects() {
       </div>
 
       <div className="flex flex-col gap-2">
-        {projects.map(
+        {filteredProjects.map(
           ({ name, image, status, contributors, description, skills }) => (
             <Project
               type="project"

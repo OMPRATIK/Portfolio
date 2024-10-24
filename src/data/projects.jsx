@@ -42,7 +42,7 @@ const projects = [
       { name: "Fast API", icon: <SiFastapi /> },
       { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
     ],
-    type: "full-stack",
+    type: "Full-stack",
   },
   {
     name: "Quizzo",
@@ -57,7 +57,7 @@ const projects = [
       { name: "React-router", icon: <SiReactrouter /> },
       { name: "Typescript", icon: <SiTypescript /> },
     ],
-    type: "front-end",
+    type: "Front-end",
   },
   {
     name: "The Wild Oasis",
@@ -74,7 +74,7 @@ const projects = [
       { name: "React-hook-form", icon: <SiReacthookform /> },
       { name: "Supabase", icon: <RiSupabaseFill /> },
     ],
-    type: "full-stack",
+    type: "Full-stack",
   },
 ];
 
