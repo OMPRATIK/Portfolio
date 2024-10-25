@@ -1,4 +1,4 @@
-import profilePhoto from "../assets/profileImage.jpeg";
+import profilePhoto from "/profileImage.jpeg";
 import PropTypes from "prop-types";
 
 function ProfilePhoto({ type }) {

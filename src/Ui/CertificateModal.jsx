@@ -1,6 +1,5 @@
-import Modal from "../components/Modal";
-
 import PropTypes from "prop-types";
+import Modal from "../components/Modal";
 
 function CertificateModal({ image, openModal, setOpenModal }) {
   return (

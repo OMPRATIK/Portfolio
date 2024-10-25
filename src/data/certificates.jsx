@@ -4,14 +4,14 @@ import { SiMongodb } from "react-icons/si";
 import { FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
 import { RiNewspaperLine } from "react-icons/ri";
 
-import ApnaCollege from "../assets/Certificates/alpha2.png";
-import CipherSchools from "../assets/Certificates/core_java_cipher_schools.png";
-import Sql from "../assets/Certificates/sql.png";
-import HtmlCss from "../assets/Certificates/udemy_html_css.png";
-import MongoDB from "../assets/Certificates/mongoDB_basics.png";
-import ProblemSolving from "../assets/Certificates/problem_solving_basic-.jpeg";
-import PythonCertificate from "../assets/Certificates/python_basic-.jpeg";
-import ReactCertificate from "../assets/Certificates/react_basiccertificate-.jpeg";
+import ApnaCollege from "/Certificates/alpha2.png";
+import CipherSchools from "/Certificates/core_java_cipher_schools.png";
+import Sql from "/Certificates/sql.jpeg";
+import HtmlCss from "/Certificates/udemy_html_css.png";
+import MongoDB from "/Certificates/mongoDB_basics.png";
+import ProblemSolving from "/Certificates/problem_solving_basic-.jpeg";
+import PythonCertificate from "/Certificates/python_basic-.jpeg";
+import ReactCertificate from "/Certificates/react_basiccertificate-.jpeg";
 
 const certificates = [
   {
@@ -21,7 +21,7 @@ const certificates = [
   },
 
   {
-    name: "Cipher Schools",
+    name: "CipherSchools: Core JAVA",
     image: CipherSchools,
     skills: [{ name: "JAVA", icon: <FaJava /> }],
   },

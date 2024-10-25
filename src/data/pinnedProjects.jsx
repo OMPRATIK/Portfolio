@@ -14,9 +14,9 @@ import {
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiSupabaseFill } from "react-icons/ri";
 
-import VirtualGarden from "../assets/PinnedProjects/VirtualGarden.png";
-import QuizzoImage from "../assets/PinnedProjects/Quizzo.png";
-import WildOasis from "../assets/PinnedProjects/WildOasis.png";
+import VirtualGarden from "../../public/PinnedProjects/VirtualGarden.png";
+import QuizzoImage from "../../public/PinnedProjects/Quizzo.png";
+import WildOasis from "../../public/PinnedProjects/WildOasis.png";
 
 const pinnedProjects = [
   {
