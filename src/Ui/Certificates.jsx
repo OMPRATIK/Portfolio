@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
-import { LiaCertificateSolid } from "react-icons/lia";
 
+import { LiaCertificateSolid } from "react-icons/lia";
 import Skill from "./Skill";
 import SubHeading from "../components/SubHeading";
 import Carousel from "../components/Carousel";
 import CertificateModal from "./CertificateModal";
 
 import certificates from "../data/certificates";
+
+// const SPRING_OPTIONS = {
+//   type: "spring",
+//   mass: 3,
+//   stiffness: 400,
+//   damping: 50,
+// };
 
 function Certificates() {
   const [numItemInFrame, setNumItemInFrame] = useState(2);
@@ -30,7 +37,7 @@ function Certificates() {
   }, []);
 
   return (
-    <section className="mb-6 mt-10 sm:mb-10">
+    <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
         <SubHeading
           heading={"Certifications"}

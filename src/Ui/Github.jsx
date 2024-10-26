@@ -2,6 +2,11 @@ import { FiGithub } from "react-icons/fi";
 import SubHeading from "../components/SubHeading";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import GitHubCalendar from "react-github-calendar";
+
+const theme = {
+  dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
+};
 
 function Github() {
   return (
@@ -20,7 +25,7 @@ function Github() {
         className="flex flex-col gap-2 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
           sm:gap-4 sm:p-4"
       >
-        <div className="flex gap-2.5">
+        <div className="mb-2 flex gap-2.5">
           <img
             src="https://streak-stats.demolab.com?user=OMPRATIK&background=18181b&hide_border=true&border_radius=6&currStreakNum=d4d4d8&dates=a1a1aa&sideNums=d4d4d8&sideLabels=f59e0b"
             alt="GitHub Streak"
@@ -44,9 +49,11 @@ function Github() {
           </div>
         </div>
         <div>
-          <img
-            src="https://ghchart.rshah.org/14532d/OMPRATIK"
-            alt="Pratik's github heatmap"
+          <GitHubCalendar
+            username="OMPRATIK"
+            blockMargin={3}
+            colorScheme="dark"
+            theme={theme}
           />
         </div>
       </div>

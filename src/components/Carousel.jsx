@@ -18,11 +18,11 @@ function Carousel({
   setItemIdx,
   itemIdx,
 }) {
-  // const [itemIdx, setItemIdx] = useState(0);
   const dragX = useMotionValue(0);
 
   const onDragEnd = () => {
     const x = dragX.get();
+
     if (x <= -DRAG_BUFFER && itemIdx < size - numItemInFrame) {
       setItemIdx((idx) => idx + numItemInFrame);
     } else if (x >= DRAG_BUFFER && itemIdx > 0) {
@@ -34,7 +34,7 @@ function Carousel({
     <>
       <div className="overflow-hidden">
         <motion.div
-          className="flex gap-2"
+          className="flex cursor-grab gap-2 active:cursor-grabbing"
           drag="x"
           dragConstraints={{
             left: 0,

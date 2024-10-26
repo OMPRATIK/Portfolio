@@ -1,8 +1,12 @@
 import { SiLeetcode } from "react-icons/si";
 import SubHeading from "../components/SubHeading";
-
+import LeetCodeCalendar from "leetcode-calendar";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+
+const theme = {
+  dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
+};
 
 function Leetcode() {
   return (
@@ -21,23 +25,28 @@ function Leetcode() {
         className="flex flex-col gap-0 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
           sm:gap-2 sm:p-4"
       >
-        <div className="flex gap-2.5">
+        <div className="mb-2 flex gap-2.5">
           <img
-            src="https://leetcard.jacoblin.cool/OMPRATIK?border=0&theme=transparent&font=inconsolata&ext=heatmap"
+            src="https://leetcard.jacoblin.cool/OMPRATIK?border=0&theme=transparent&font=inconsolata"
             className="w-full sm:w-[60%]"
           />
           <ul className="hidden p-2 text-base text-zinc-400 sm:flex sm:flex-col sm:gap-2">
-            <h3 className="text-xl font-semibold text-zinc-300">OMPRATIK</h3>
-            <li>
-              I excel in problem-solving, having completed over 500 coding
-              questions on LeetCode.
-            </li>
-
             <li>
               I thrive on tackling complex problems and continuously seek to
-              improve my coding proficiency.
+              improve my coding proficiency. I have solved more than 500
+              questions.
             </li>
           </ul>
+        </div>
+        <div>
+          <LeetCodeCalendar
+            username="OMPRATIK" // Replace with your LeetCode username
+            blockSize={12} // Optional: Size of each block in pixels (default: 15)
+            blockMargin={3} // Optional: Margin between blocks in pixels (default: 5)
+            fontSize={14} // Optional: Font size of the text within blocks (default: 16)
+            theme={theme} // Optional: A custom theme object to style the calendar
+            style={{ maxWidth: "100%" }} // Optional: Inline styles for the calendar container
+          />
         </div>
       </div>
     </section>
