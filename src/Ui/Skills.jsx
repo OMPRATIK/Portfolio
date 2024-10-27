@@ -17,6 +17,7 @@ import {
   SiAxios,
   SiExpress,
   SiJavascript,
+  SiLeaflet,
   SiMongodb,
   SiMongoose,
   SiPostman,
@@ -56,6 +57,7 @@ const skills = [
   { name: "Git", icon: <FaGitAlt /> },
   { name: "Supabase", icon: <RiSupabaseFill /> },
   { name: "Postman API", icon: <SiPostman /> },
+  { name: "Leaflet", icon: <SiLeaflet /> },
 ];
 
 function Skills() {

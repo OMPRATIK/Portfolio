@@ -1,11 +1,12 @@
-import SubHeading from "../components/SubHeading";
 import { useState } from "react";
+import { GoProjectRoadmap } from "react-icons/go";
+
+import SubHeading from "../components/SubHeading";
+import projects from "../data/projects";
+import Project from "../Ui/Project";
 
 const options = ["All", "Front-end", "Back-end", "Full-stack"];
 
-import projects from "../data/projects";
-import Project from "../Ui/Project";
-import { GoProjectRoadmap } from "react-icons/go";
 function Projects() {
   const [op, setOp] = useState("All");
 
