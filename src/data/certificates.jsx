@@ -4,14 +4,14 @@ import { SiMongodb } from "react-icons/si";
 import { FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
 import { RiNewspaperLine } from "react-icons/ri";
 
-import ApnaCollege from "/Certificates/alpha2.jpeg";
-import CipherSchools from "/Certificates/core_java_cipher_schools.jpeg";
-import Sql from "/Certificates/sql.jpeg";
-import HtmlCss from "/Certificates/udemy_html_css.png";
-import MongoDB from "/Certificates/mongoDB_basics.jpeg";
-import ProblemSolving from "/Certificates/problem_solving_basic-.jpeg";
-import PythonCertificate from "/Certificates/python_basic-.jpeg";
-import ReactCertificate from "/Certificates/react_basiccertificate-.jpeg";
+import ApnaCollege from "/Certificates/alpha2.webp";
+import CipherSchools from "/Certificates/core_java_cipher_schools.webp";
+import Sql from "/Certificates/sql.webp";
+import HtmlCss from "/Certificates/udemy_html_css.webp";
+import MongoDB from "/Certificates/mongoDB_basics.webp";
+import ProblemSolving from "/Certificates/problem_solving_basic-.webp";
+import PythonCertificate from "/Certificates/python_basic-.webp";
+import ReactCertificate from "/Certificates/react_basiccertificate-.webp";
 
 const certificates = [
   {

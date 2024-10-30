@@ -6,6 +6,9 @@ import Skill from "./Skill";
 import NotLive from "../components/projectStatus/NotLive";
 import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
+import { useState } from "react";
+import Modal from "../components/Modal";
+import ReactPlayer from "react-player";
 
 function Project({
   image,
@@ -16,6 +19,8 @@ function Project({
   status,
   type,
 }) {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div
       className={`flex ${type ? "w-full" : "w-[95%]"} shrink-0 flex-col gap-4 rounded-md
@@ -35,7 +40,7 @@ function Project({
               <div className="mb-2 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-4">
                   <h3 className="text-xl font-semibold">{name}</h3>
-                  <ProjectMetaData />
+                  <ProjectMetaData setOpenModal={setOpenModal} />
                 </div>
 
                 {status === "notLive" && <NotLive />}
@@ -68,6 +73,30 @@ function Project({
           </div>
         </div>
       </div>
+
+      <Modal openModal={openModal} setOpenModal={setOpenModal}>
+        <ReactPlayer url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"} />
+      </Modal>
+    </div>
+  );
+}
+
+function ProjectMetaData({ link, github, setOpenModal }) {
+  return (
+    <div className="flex gap-2.5 text-xl">
+      {link ? (
+        <button>
+          <MdLink />
+        </button>
+      ) : (
+        <MdLinkOff className="text-red-300" />
+      )}
+      <Link to={github}>
+        <FiGithub className="text-blue-500 hover:text-blue-400" />
+      </Link>
+      <button onClick={() => setOpenModal(true)}>
+        <MdOutlinePreview className="text-yellow-200 hover:text-yellow-100" />
+      </button>
     </div>
   );
 }
@@ -82,29 +111,10 @@ Project.propTypes = {
   type: PropTypes.string,
 };
 
-function ProjectMetaData({ link, github }) {
-  return (
-    <div className="flex gap-2.5 text-xl">
-      {link ? (
-        <button>
-          <MdLink />
-        </button>
-      ) : (
-        <MdLinkOff className="text-red-300" />
-      )}
-      <Link to={github}>
-        <FiGithub className="text-blue-500 hover:text-blue-400" />
-      </Link>
-      <button>
-        <MdOutlinePreview className="text-yellow-200 hover:text-yellow-100" />
-      </button>
-    </div>
-  );
-}
-
 ProjectMetaData.propTypes = {
   link: PropTypes.string,
   github: PropTypes.string,
+  setOpenModal: PropTypes.func,
 };
 
 export default Project;

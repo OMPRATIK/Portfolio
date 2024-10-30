@@ -8,13 +8,6 @@ import CertificateModal from "./CertificateModal";
 
 import certificates from "../data/certificates";
 
-// const SPRING_OPTIONS = {
-//   type: "spring",
-//   mass: 3,
-//   stiffness: 400,
-//   damping: 50,
-// };
-
 function Certificates() {
   const [numItemInFrame, setNumItemInFrame] = useState(2);
   const [itemIdx, setItemIdx] = useState(0);

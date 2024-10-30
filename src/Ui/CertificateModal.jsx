@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Modal from "../components/Modal";
+import { memo } from "react";
 
 function CertificateModal({ image, openModal, setOpenModal }) {
   return (
@@ -15,4 +16,4 @@ CertificateModal.propTypes = {
   setOpenModal: PropTypes.func,
 };
 
-export default CertificateModal;
+export default memo(CertificateModal);
