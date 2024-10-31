@@ -54,13 +54,22 @@ function Project({
             </div>
           </div>
         </div>
+        <div className={`${openModal ? "block" : "hidden"}`}>
+          <h4>Preview</h4>
+          <ReactPlayer
+            url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
+            className="rounded-md"
+            width={"100%"}
+            height={"180px"}
+          />
+        </div>
         <p className="mb-2 text-zinc-300 sm:hidden">{description}</p>
 
         <div>
           {contributors && (
             <div className="mb-3 flex flex-col sm:flex-row sm:gap-2">
               <h4 className="font-semibold">Contributors</h4>
-              <ul className="flex flex-wrap items-center gap-1 text-sm text-zinc-300/70">
+              <ul className="flex flex-wrap items-center gap-1 text-sm text-zinc-400">
                 {contributors.join(", ")}
               </ul>
             </div>
@@ -74,9 +83,12 @@ function Project({
         </div>
       </div>
 
-      <Modal openModal={openModal} setOpenModal={setOpenModal}>
-        <ReactPlayer url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"} />
-      </Modal>
+      {/* <Modal openModal={openModal} setOpenModal={setOpenModal}>
+        <ReactPlayer
+          url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
+          className="rounded-md"
+        />
+      </Modal> */}
     </div>
   );
 }
@@ -94,7 +106,7 @@ function ProjectMetaData({ link, github, setOpenModal }) {
       <Link to={github}>
         <FiGithub className="text-blue-500 hover:text-blue-400" />
       </Link>
-      <button onClick={() => setOpenModal(true)}>
+      <button onClick={() => setOpenModal((openModal) => !openModal)}>
         <MdOutlinePreview className="text-yellow-200 hover:text-yellow-100" />
       </button>
     </div>
