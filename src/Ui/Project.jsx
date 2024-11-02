@@ -7,7 +7,6 @@ import NotLive from "../components/projectStatus/NotLive";
 import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
-import Modal from "../components/Modal";
 import ReactPlayer from "react-player";
 
 function Project({
@@ -54,8 +53,7 @@ function Project({
             </div>
           </div>
         </div>
-        <div className={`${openModal ? "block" : "hidden"}`}>
-          <h4>Preview</h4>
+        <div className={`${openModal ? "block" : "hidden"} pb-4`}>
           <ReactPlayer
             url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
             className="rounded-md"
@@ -74,7 +72,6 @@ function Project({
               </ul>
             </div>
           )}
-          {/* <h4 className="mb-1 font-semibold">Technologies Used</h4> */}
           <div className="flex flex-wrap gap-1">
             {skills.map(({ name, icon }) => (
               <Skill name={name} icon={icon} key={name} type="tech" />
@@ -82,13 +79,6 @@ function Project({
           </div>
         </div>
       </div>
-
-      {/* <Modal openModal={openModal} setOpenModal={setOpenModal}>
-        <ReactPlayer
-          url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
-          className="rounded-md"
-        />
-      </Modal> */}
     </div>
   );
 }
