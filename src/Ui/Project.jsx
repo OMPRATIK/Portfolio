@@ -8,6 +8,7 @@ import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
 import ReactPlayer from "react-player";
+import useResizeScreen from "../hooks/resizeScreen/useResizeScreen";
 
 function Project({
   image,
@@ -19,6 +20,7 @@ function Project({
   type,
 }) {
   const [openModal, setOpenModal] = useState(false);
+  const { isSmallScreen } = useResizeScreen();
 
   return (
     <div
@@ -53,14 +55,17 @@ function Project({
             </div>
           </div>
         </div>
-        <div className={`${openModal ? "block" : "hidden"} pb-4`}>
-          <ReactPlayer
-            url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
-            className="rounded-md"
-            width={"100%"}
-            height={"180px"}
-          />
-        </div>
+        {openModal && (
+          <div className={"pb-4"}>
+            <ReactPlayer
+              url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
+              className="rounded-md"
+              width={"100%"}
+              height={`${isSmallScreen ? "180px" : "300px"}`}
+            />
+          </div>
+        )}
+
         <p className="mb-2 text-zinc-300 sm:hidden">{description}</p>
 
         <div>

@@ -5,21 +5,24 @@ import Blogs from "./Pages/Blogs";
 import Projects from "./Pages/Projects";
 import Profile from "./Pages/Profile";
 import NavBar from "./Ui/NavBar";
+import ResizeScreenProvider from "./hooks/resizeScreen/ResizeScreenProvider";
 
 function App() {
   const location = useLocation();
 
   return (
     <>
-      <NavBar />
-      <Routes location={location} key={location.pathname}>
-        <Route element={<AppLayout />}>
-          <Route index element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blogs" element={<Blogs />} />
-        </Route>
-      </Routes>
+      <ResizeScreenProvider>
+        <NavBar />
+        <Routes location={location} key={location.pathname}>
+          <Route element={<AppLayout />}>
+            <Route index element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<Blogs />} />
+          </Route>
+        </Routes>
+      </ResizeScreenProvider>
     </>
   );
 }
