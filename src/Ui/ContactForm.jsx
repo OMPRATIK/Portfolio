@@ -24,7 +24,7 @@ function ContactForm() {
         />
         <input
           placeholder="Email"
-          type="text"
+          type="email"
           className="rounded-md bg-zinc-800 px-2 py-1 text-zinc-300 outline-none
             focus:outline-offset-1 focus:outline-zinc-600"
         />

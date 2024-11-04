@@ -15,7 +15,8 @@ function Github() {
         <SubHeading heading={"Github"} icon={<FiGithub />} />
         <Link
           className="flex items-center gap-1.5 text-sm text-blue-500 hover:text-blue-400 sm:text-base"
-          to="/projects"
+          to="https://github.com/OMPRATIK"
+          target="_blank"
         >
           <span>Github Profile</span>
           <FaExternalLinkAlt className="text-xs" />
@@ -54,6 +55,7 @@ function Github() {
             blockMargin={3}
             colorScheme="dark"
             theme={theme}
+            year={new Date().getFullYear()}
           />
         </div>
       </div>

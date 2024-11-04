@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { FiGithub } from "react-icons/fi";
-import { MdLink, MdLinkOff, MdOutlinePreview } from "react-icons/md";
+import { MdLink, MdLinkOff } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Skill from "./Skill";
 import NotLive from "../components/projectStatus/NotLive";
@@ -9,6 +9,7 @@ import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
 import ReactPlayer from "react-player";
 import useResizeScreen from "../hooks/resizeScreen/useResizeScreen";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 function Project({
   image,
@@ -41,7 +42,10 @@ function Project({
               <div className="mb-2 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-4">
                   <h3 className="text-xl font-semibold">{name}</h3>
-                  <ProjectMetaData setOpenModal={setOpenModal} />
+                  <ProjectMetaData
+                    setOpenModal={setOpenModal}
+                    openModal={openModal}
+                  />
                 </div>
 
                 {status === "notLive" && <NotLive />}
@@ -88,7 +92,7 @@ function Project({
   );
 }
 
-function ProjectMetaData({ link, github, setOpenModal }) {
+function ProjectMetaData({ link, github, setOpenModal, openModal }) {
   return (
     <div className="flex gap-2.5 text-xl">
       {link ? (
@@ -102,7 +106,11 @@ function ProjectMetaData({ link, github, setOpenModal }) {
         <FiGithub className="text-blue-500 hover:text-blue-400" />
       </Link>
       <button onClick={() => setOpenModal((openModal) => !openModal)}>
-        <MdOutlinePreview className="text-yellow-200 hover:text-yellow-100" />
+        {!openModal ? (
+          <FaRegEye className="text-yellow-200 hover:text-yellow-100" />
+        ) : (
+          <FaRegEyeSlash className="text-yellow-200 hover:text-yellow-100" />
+        )}
       </button>
     </div>
   );
@@ -122,6 +130,7 @@ ProjectMetaData.propTypes = {
   link: PropTypes.string,
   github: PropTypes.string,
   setOpenModal: PropTypes.func,
+  openModal: PropTypes.bool,
 };
 
 export default Project;

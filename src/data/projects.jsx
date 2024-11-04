@@ -21,20 +21,20 @@ import {
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
 
-import VirtualGarden from "/PinnedProjects/VirtualGarden.png";
-import QuizzoImage from "/PinnedProjects/Quizzo.png";
-import WildOasis from "/PinnedProjects/WildOasis.png";
+import VirtualGarden from "/PinnedProjects/VirtualGarden.webp";
+import QuizzoImage from "/PinnedProjects/Quizzo.webp";
+import WildOasis from "/PinnedProjects/WildOasis.webp";
 
-import Jwt from "/Projects/jwt.png";
-import Jobs from "/Projects/jobs.png";
-import Mapty from "/Projects/mapty.png";
-import WorldWise from "/Projects/worldWise.png";
-import FastReactPizza from "/Projects/fastReactPizza.png";
-import Sparks from "/Projects/sparks.png";
-import UsePopcorn from "/Projects/usePopcorn.jpeg";
-import TaskManger from "/Projects/taskManager.png";
-import Store from "/Projects/store.png";
-import Omnifood from "/Projects/omnifood.png";
+import Jwt from "/Projects/jwt.webp";
+import Jobs from "/Projects/jobs.webp";
+import Mapty from "/Projects/mapty.webp";
+import WorldWise from "/Projects/worldWise.webp";
+import FastReactPizza from "/Projects/fastReactPizza.webp";
+import Sparks from "/Projects/sparks.webp";
+import UsePopcorn from "/Projects/usePopcorn.webp";
+import TaskManger from "/Projects/taskManager.webp";
+import Store from "/Projects/store.webp";
+import Omnifood from "/Projects/omnifood.webp";
 
 const projects = [
   {

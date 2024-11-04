@@ -14,7 +14,7 @@ function PageTransition({ children }) {
       initial="hidden"
       animate="visible"
       exit="exit"
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.4 }}
     >
       {children}
     </motion.div>

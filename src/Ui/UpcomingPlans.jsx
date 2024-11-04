@@ -11,7 +11,8 @@ function UpcomingPlans() {
 
         <Link
           className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-400 sm:text-base"
-          to="/projects"
+          to="https://x.com/_ompratik_"
+          target="_blank"
         >
           <span className="flex items-center gap-1">
             More on <FaXTwitter className="text-xs" />

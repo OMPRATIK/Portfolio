@@ -15,7 +15,8 @@ function Leetcode() {
         <SubHeading heading="Leetcode" icon={<SiLeetcode />} />
         <Link
           className="flex items-center gap-1.5 text-sm text-blue-500 hover:text-blue-400 sm:text-base"
-          to="/projects"
+          to="https://leetcode.com/u/OMPRATIK/"
+          target="_blank"
         >
           <span>Leetcode Profile</span>
           <FaExternalLinkAlt className="text-xs" />

@@ -7,6 +7,7 @@ import { useState } from "react";
 import Modal from "../components/Modal";
 import ContactForm from "./ContactForm";
 
+import cv from "/cv.pdf";
 function User() {
   const [openModal, setOpenModal] = useState(false);
 
@@ -42,6 +43,9 @@ function User() {
           <Link
             className="flex items-center gap-2 rounded-md bg-zinc-300 px-3 py-1 text-zinc-800
               hover:bg-zinc-400"
+            to={cv}
+            target="_blank"
+            download
           >
             <FaFileAlt /> Resume
           </Link>
