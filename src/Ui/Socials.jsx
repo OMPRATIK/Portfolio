@@ -6,11 +6,23 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 const socialsLinks = [
-  { logo: <FiGithub />, name: "Github", link: "" },
-  { logo: <SlSocialLinkedin />, name: "Linkedin", link: "" },
-  { logo: <SiLeetcode />, name: "Leetcode", link: "" },
-  { logo: <FaXTwitter />, name: "X", link: "" },
-  { logo: <FaInstagram />, name: "Instagram", link: "" },
+  { logo: <FiGithub />, name: "Github", link: "https://github.com/OMPRATIK" },
+  {
+    logo: <SlSocialLinkedin />,
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/pratik-rout/",
+  },
+  {
+    logo: <SiLeetcode />,
+    name: "Leetcode",
+    link: "https://leetcode.com/u/OMPRATIK/",
+  },
+  { logo: <FaXTwitter />, name: "X", link: "https://x.com/_ompratik_" },
+  {
+    logo: <FaInstagram />,
+    name: "Instagram",
+    link: "https://www.instagram.com/__theitchepicure__/",
+  },
 ];
 
 function Socials() {
@@ -23,6 +35,7 @@ function Socials() {
               to={link}
               key={name}
               className="text-zinc-50 hover:text-blue-400"
+              target="_blank"
             >
               {logo}
             </Link>
