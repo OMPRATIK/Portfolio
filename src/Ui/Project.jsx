@@ -19,6 +19,8 @@ function Project({
   skills,
   status,
   type,
+  github,
+  link,
 }) {
   const [openModal, setOpenModal] = useState(false);
   const { isSmallScreen } = useResizeScreen();
@@ -45,6 +47,8 @@ function Project({
                   <ProjectMetaData
                     setOpenModal={setOpenModal}
                     openModal={openModal}
+                    github={github}
+                    link={link}
                   />
                 </div>
 
@@ -95,16 +99,21 @@ function Project({
 function ProjectMetaData({ link, github, setOpenModal, openModal }) {
   return (
     <div className="flex gap-2.5 text-xl">
-      {link ? (
+      {link !== "" ? (
         <button>
           <MdLink />
         </button>
       ) : (
-        <MdLinkOff className="text-red-300" />
+        <MdLinkOff className="text-red-400" />
       )}
-      <Link to={github}>
-        <FiGithub className="text-blue-500 hover:text-blue-400" />
-      </Link>
+      {github !== "" ? (
+        <Link to={github} target="_blank">
+          <FiGithub className="text-blue-500 hover:text-blue-400" />
+        </Link>
+      ) : (
+        <FiGithub className="text-red-400" />
+      )}
+
       <button onClick={() => setOpenModal((openModal) => !openModal)}>
         {!openModal ? (
           <FaRegEye className="text-yellow-200 hover:text-yellow-100" />
@@ -124,6 +133,8 @@ Project.propTypes = {
   skills: PropTypes.array,
   status: PropTypes.string,
   type: PropTypes.string,
+  github: PropTypes.string,
+  link: PropTypes.string,
 };
 
 ProjectMetaData.propTypes = {

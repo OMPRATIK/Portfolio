@@ -5,7 +5,7 @@ import { memo } from "react";
 function CertificateModal({ image, openModal, setOpenModal }) {
   return (
     <Modal openModal={openModal} setOpenModal={setOpenModal}>
-      <img src={image} alt={`${image} modal`} />
+      <img src={image} alt={`${image} modal`} className="" />
     </Modal>
   );
 }

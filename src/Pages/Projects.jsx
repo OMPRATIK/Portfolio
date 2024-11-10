@@ -33,7 +33,16 @@ function Projects() {
 
       <div className="flex flex-col gap-2">
         {filteredProjects.map(
-          ({ name, image, status, contributors, description, skills }) => (
+          ({
+            name,
+            image,
+            status,
+            contributors,
+            description,
+            skills,
+            github,
+            link,
+          }) => (
             <Project
               type="project"
               key={name}
@@ -43,6 +52,8 @@ function Projects() {
               contributors={contributors}
               description={description}
               skills={skills}
+              github={github}
+              link={link}
             />
           ),
         )}

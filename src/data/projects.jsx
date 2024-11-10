@@ -61,6 +61,8 @@ const projects = [
       { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
     ],
     type: "Full-stack",
+    github: "",
+    link: "",
   },
   {
     name: "Quizzo",
@@ -76,6 +78,8 @@ const projects = [
       { name: "Typescript", icon: <SiTypescript /> },
     ],
     type: "Front-end",
+    github: "https://github.com/OMPRATIK/Quizzo",
+    link: "",
   },
   {
     name: "The Wild Oasis",
@@ -93,6 +97,8 @@ const projects = [
       { name: "Supabase", icon: <RiSupabaseFill /> },
     ],
     type: "Full-stack",
+    github: "https://github.com/OMPRATIK/The-Wild-Oasis",
+    link: "",
   },
   {
     name: "JWT Basics",
@@ -107,6 +113,8 @@ const projects = [
       { name: "JWT", icon: <SiJsonwebtokens /> },
     ],
     type: "Back-end",
+    github: "https://github.com/OMPRATIK/JWT-Basics",
+    link: "",
   },
   {
     name: "Jobs API",
@@ -123,6 +131,8 @@ const projects = [
       { name: "Mongoose", icon: <SiMongoose /> },
     ],
     type: "Back-end",
+    github: "https://github.com/OMPRATIK/Jobs-API",
+    link: "",
   },
   {
     name: "Mapty",
@@ -138,6 +148,8 @@ const projects = [
       { name: "Leaflet", icon: <SiLeaflet /> },
     ],
     type: "Front-end",
+    github: "https://github.com/OMPRATIK/Mapty",
+    link: "",
   },
   {
     name: "World Wise",
@@ -153,6 +165,8 @@ const projects = [
       { name: "Leaflet", icon: <SiLeaflet /> },
     ],
     type: "Front-end",
+    github: "https://github.com/OMPRATIK/WorldWise",
+    link: "",
   },
   {
     name: "Fast-react-pizza",
@@ -168,6 +182,8 @@ const projects = [
       { name: "Redux-toolkit", icon: <SiRedux /> },
     ],
     type: "Front-end",
+    github: "https://github.com/OMPRATIK/Fast-react-pizza-co",
+    link: "",
   },
   {
     name: "Sparks",
@@ -187,6 +203,8 @@ const projects = [
       { name: "Mongoose", icon: <SiMongoose /> },
     ],
     type: "Full-stack",
+    github: "https://github.com/OMPRATIK/Sparks-Blog-App",
+    link: "",
   },
 
   {
@@ -201,6 +219,8 @@ const projects = [
       { name: "CSS", icon: <IoLogoCss3 /> },
     ],
     type: "Front-end",
+    github: "https://github.com/OMPRATIK/Use-Popcorn",
+    link: "",
   },
   {
     name: "Omnifood",
@@ -214,6 +234,8 @@ const projects = [
       { name: "CSS", icon: <IoLogoCss3 /> },
     ],
     type: "Front-end",
+    github: "https://github.com/OMPRATIK/Omnifood",
+    link: "",
   },
   {
     name: "Task-managr API",
@@ -229,6 +251,8 @@ const projects = [
       { name: "Mongoose", icon: <SiMongoose /> },
     ],
     type: "Back-end",
+    github: "https://github.com/OMPRATIK/TaskManagerAPI",
+    link: "",
   },
   {
     name: "Store API",
@@ -244,6 +268,8 @@ const projects = [
       { name: "Mongoose", icon: <SiMongoose /> },
     ],
     type: "Back-end",
+    github: "https://github.com/OMPRATIK/Store-API",
+    link: "",
   },
 ];
 

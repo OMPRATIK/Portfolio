@@ -33,7 +33,16 @@ function PinnedProjects() {
         itemIdx={itemIdx}
       >
         {pinnedProjects.map(
-          ({ name, image, status, contributors, description, skills }) => {
+          ({
+            name,
+            image,
+            status,
+            contributors,
+            description,
+            skills,
+            github,
+            link,
+          }) => {
             return (
               <Project
                 key={name}
@@ -43,6 +52,8 @@ function PinnedProjects() {
                 contributors={contributors}
                 description={description}
                 skills={skills}
+                github={github}
+                link={link}
               />
             );
           },
