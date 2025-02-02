@@ -1,34 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { LiaCertificateSolid } from "react-icons/lia";
 import Skill from "./Skill";
 import SubHeading from "../components/SubHeading";
-import Carousel from "../components/Carousel";
+
 import CertificateModal from "./CertificateModal";
 
 import certificates from "../data/certificates";
 
 function Certificates() {
-  const [numItemInFrame, setNumItemInFrame] = useState(2);
-  const [itemIdx, setItemIdx] = useState(0);
   const [openModal, setOpenModal] = useState(false);
-
-  useEffect(function () {
-    function handleResize() {
-      if (window.innerWidth < 640) {
-        setNumItemInFrame(1);
-      } else {
-        setNumItemInFrame(2);
-      }
-      setItemIdx(0);
-    }
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
@@ -37,27 +18,19 @@ function Certificates() {
           icon={<LiaCertificateSolid className="text-3xl" />}
         />
       </div>
-
-      <Carousel
-        numItemInFrame={numItemInFrame}
-        items={certificates}
-        size={certificates.length}
-        itemIdx={itemIdx}
-        setItemIdx={setItemIdx}
-      >
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {certificates.map(({ name, image, skills }) => {
           return (
             <div
               key={name}
-              className={`flex ${numItemInFrame === 2 ? "w-[47.5%]" : "w-[94%]"} shrink-0 flex-col gap-2
-              rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2 sm:p-4`}
+              className="flex flex-col gap-1 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2"
             >
-              <div className="overflow-hidden">
+              <div className="w-full overflow-hidden rounded-md">
                 <img
                   src={image}
                   alt={`${name} certificate`}
-                  className="cursor-pointer rounded-md transition-transform ease-in-out hover:scale-110"
                   onClick={() => setOpenModal(name)}
+                  className="cursor-pointer rounded-md transition-transform ease-in-out hover:scale-110"
                 />
               </div>
               <CertificateModal
@@ -65,14 +38,15 @@ function Certificates() {
                 openModal={openModal === name}
                 setOpenModal={setOpenModal}
               />
-              <div className="flex flex-col justify-between gap-2">
-                <h3 className="text-xl font-bold">{name}</h3>
-
-                <p className="text-zinc-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum deserunt sint consectetur fugiat accusantium quae nemo
+              <div className="flex flex-grow flex-col justify-between gap-1">
+                <h3 className="text-xl font-semibold">{name}</h3>
+                <p className="text-sm opacity-75">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nulla atque id perferendis deserunt cumque in sapiente illum
+                  obcaecati sed iusto.
                 </p>
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap items-center gap-1">
+                  <p className="text-sm font-semibold">Skills: </p>
                   {skills.map((skill) => (
                     <Skill
                       key={skill.name}
@@ -86,9 +60,8 @@ function Certificates() {
             </div>
           );
         })}
-      </Carousel>
+      </div>
     </section>
   );
 }
-
 export default Certificates;

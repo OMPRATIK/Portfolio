@@ -28,10 +28,11 @@ function Github() {
       >
         <div className="mb-2 flex gap-2.5">
           <img
-            src="https://streak-stats.demolab.com?user=OMPRATIK&background=18181b&hide_border=true&border_radius=6&currStreakNum=d4d4d8&dates=a1a1aa&sideNums=d4d4d8&sideLabels=f59e0b"
+            src="https://github-readme-stats.vercel.app/api?username=OMPRATIK&theme=dark&show_icons=true&hide_border=true&count_private=true"
             alt="GitHub Streak"
             className="w-full sm:w-[60%]"
           />
+
           <div className="hidden flex-col justify-between sm:flex">
             <p className="p-2 text-zinc-400">
               My Github showcases a diverse range of projects, from frontend,
@@ -55,7 +56,6 @@ function Github() {
             blockMargin={3}
             colorScheme="dark"
             theme={theme}
-            year={new Date().getFullYear()}
           />
         </div>
       </div>

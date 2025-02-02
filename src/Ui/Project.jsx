@@ -7,9 +7,9 @@ import NotLive from "../components/projectStatus/NotLive";
 import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
-import ReactPlayer from "react-player";
-import useResizeScreen from "../hooks/resizeScreen/useResizeScreen";
+
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import ProjectVideo from "./ProjectVideo";
 
 function Project({
   image,
@@ -21,9 +21,9 @@ function Project({
   type,
   github,
   link,
+  video,
 }) {
   const [openModal, setOpenModal] = useState(false);
-  const { isSmallScreen } = useResizeScreen();
 
   return (
     <div
@@ -64,13 +64,14 @@ function Project({
           </div>
         </div>
         {openModal && (
-          <div className={"pb-4"}>
-            <ReactPlayer
+          <div className={"mb-4"}>
+            {/* <ReactPlayer
               url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
               className="rounded-md"
               width={"100%"}
               height={`${isSmallScreen ? "180px" : "300px"}`}
-            />
+            /> */}
+            <ProjectVideo src={video} />
           </div>
         )}
 
@@ -135,6 +136,7 @@ Project.propTypes = {
   type: PropTypes.string,
   github: PropTypes.string,
   link: PropTypes.string,
+  video: PropTypes.string,
 };
 
 ProjectMetaData.propTypes = {

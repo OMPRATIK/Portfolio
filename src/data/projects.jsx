@@ -36,6 +36,8 @@ import TaskManger from "/Projects/taskManager.webp";
 import Store from "/Projects/store.webp";
 import Omnifood from "/Projects/omnifood.webp";
 
+import omnifoodVideo from "/projectVideos/omnifood.mp4";
+
 const projects = [
   {
     name: "Virtual-garden",
@@ -63,6 +65,7 @@ const projects = [
     type: "Full-stack",
     github: "",
     link: "",
+    video: "",
   },
   {
     name: "Quizzo",
@@ -80,6 +83,7 @@ const projects = [
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Quizzo",
     link: "",
+    video: "",
   },
   {
     name: "The Wild Oasis",
@@ -99,6 +103,7 @@ const projects = [
     type: "Full-stack",
     github: "https://github.com/OMPRATIK/The-Wild-Oasis",
     link: "",
+    video: "",
   },
   {
     name: "JWT Basics",
@@ -115,6 +120,7 @@ const projects = [
     type: "Back-end",
     github: "https://github.com/OMPRATIK/JWT-Basics",
     link: "",
+    video: "",
   },
   {
     name: "Jobs API",
@@ -133,6 +139,7 @@ const projects = [
     type: "Back-end",
     github: "https://github.com/OMPRATIK/Jobs-API",
     link: "",
+    video: "",
   },
   {
     name: "Mapty",
@@ -150,6 +157,7 @@ const projects = [
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Mapty",
     link: "",
+    video: "",
   },
   {
     name: "World Wise",
@@ -167,6 +175,7 @@ const projects = [
     type: "Front-end",
     github: "https://github.com/OMPRATIK/WorldWise",
     link: "",
+    video: "",
   },
   {
     name: "Fast-react-pizza",
@@ -184,6 +193,7 @@ const projects = [
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Fast-react-pizza-co",
     link: "",
+    video: "",
   },
   {
     name: "Sparks",
@@ -205,6 +215,7 @@ const projects = [
     type: "Full-stack",
     github: "https://github.com/OMPRATIK/Sparks-Blog-App",
     link: "",
+    video: "",
   },
 
   {
@@ -221,6 +232,7 @@ const projects = [
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Use-Popcorn",
     link: "",
+    video: "",
   },
   {
     name: "Omnifood",
@@ -236,6 +248,7 @@ const projects = [
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Omnifood",
     link: "",
+    video: omnifoodVideo,
   },
   {
     name: "Task-managr API",
@@ -253,6 +266,7 @@ const projects = [
     type: "Back-end",
     github: "https://github.com/OMPRATIK/TaskManagerAPI",
     link: "",
+    video: "",
   },
   {
     name: "Store API",
@@ -270,6 +284,7 @@ const projects = [
     type: "Back-end",
     github: "https://github.com/OMPRATIK/Store-API",
     link: "",
+    video: "",
   },
 ];
 

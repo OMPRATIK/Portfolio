@@ -2,6 +2,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import {
   FaGitAlt,
   FaGithub,
+  FaGuitar,
   FaHtml5,
   FaJava,
   FaNodeJs,
@@ -15,6 +16,7 @@ import { RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
 
 import {
   SiAxios,
+  SiDaisyui,
   SiExpress,
   SiJavascript,
   SiLeaflet,
@@ -25,6 +27,7 @@ import {
   SiReactquery,
   SiReactrouter,
   SiRedux,
+  SiSocketdotio,
   SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
@@ -42,14 +45,17 @@ const skills = [
   { name: "Python", icon: <FaPython /> },
   { name: "React", icon: <FaReact /> },
   { name: "Tailwindcss", icon: <RiTailwindCssFill /> },
+  { name: "Daisy UI", icon: <SiDaisyui /> },
   { name: "Axios", icon: <SiAxios /> },
   { name: "React-router", icon: <SiReactrouter /> },
   { name: "Redux-toolkit", icon: <SiRedux /> },
   { name: "Styled-components", icon: <SiStyledcomponents /> },
+  { name: "Zustand", icon: <FaGuitar /> },
   { name: "Tanstack-query", icon: <SiReactquery /> },
   { name: "React-hook-form", icon: <SiReacthookform /> },
   { name: "Node.js", icon: <FaNodeJs /> },
   { name: "Express JS", icon: <SiExpress /> },
+  { name: "Socket.io", icon: <SiSocketdotio /> },
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: "Mongoose", icon: <SiMongoose /> },
   { name: "PostgreSQL", icon: <BiLogoPostgresql /> },

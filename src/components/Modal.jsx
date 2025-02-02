@@ -25,8 +25,7 @@ function Modal({ children, openModal, setOpenModal }) {
     <div className="fixed top-0 z-[999] h-screen w-full backdrop-blur-md">
       <div
         ref={ref}
-        className="absolute left-[50%] top-[50%] w-[95%] translate-x-[-50%] translate-y-[-50%]
-          sm:w-auto"
+        className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] sm:w-auto"
       >
         {children}
       </div>

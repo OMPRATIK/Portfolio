@@ -7,14 +7,14 @@ import User from "../Ui/User";
 
 function Home() {
   return (
-    <>
+    <div className="pb-10">
       <Map />
       <User />
       <About />
       <Skills />
       <PinnedProjects />
       <UpcomingPlans />
-    </>
+    </div>
   );
 }
 

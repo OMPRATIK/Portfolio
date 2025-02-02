@@ -7,8 +7,8 @@ function Blogs() {
   const [op, setOp] = useState("All");
 
   return (
-    <section className="mt-5 sm:mt-10">
-      <div className="mb-5 flex items-center justify-between">
+    <section className="flex min-h-screen flex-col pb-10 pt-5 sm:pt-10">
+      <div className="flex items-center justify-between">
         <div className="flex items-center justify-center gap-2">
           <input
             placeholder="Search blogs..."
@@ -35,7 +35,7 @@ function Blogs() {
           ))}
         </select>
       </div>
-      <div className="flex h-screen items-center justify-center">
+      <div className="flex flex-grow items-center justify-center">
         Coming soon...
       </div>
     </section>

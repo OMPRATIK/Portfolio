@@ -26,7 +26,7 @@ function Leetcode() {
         className="flex flex-col gap-0 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
           sm:gap-2 sm:p-4"
       >
-        <div className="mb-2 flex gap-2.5">
+        <div className="mb-3 flex gap-2.5">
           <img
             src="https://leetcard.jacoblin.cool/OMPRATIK?border=0&theme=transparent&font=inconsolata"
             className="w-full sm:w-[60%]"
@@ -46,7 +46,11 @@ function Leetcode() {
             blockMargin={3} // Optional: Margin between blocks in pixels (default: 5)
             fontSize={14} // Optional: Font size of the text within blocks (default: 16)
             theme={theme} // Optional: A custom theme object to style the calendar
-            style={{ maxWidth: "100%" }} // Optional: Inline styles for the calendar container
+            style={{
+              maxWidth: "100%",
+            }}
+            className="overflow-x-auto"
+            // Optional: Inline styles for the calendar container
           />
         </div>
       </div>

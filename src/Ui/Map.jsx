@@ -25,7 +25,7 @@ function Map() {
           setTimeout(() => {
             mapInstance.target.flyTo(position, 9, {
               animate: true,
-              duration: 3.5,
+              duration: 4,
             });
           }, 3000);
         }}

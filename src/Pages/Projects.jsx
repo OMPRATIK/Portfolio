@@ -14,7 +14,7 @@ function Projects() {
     op === "All" ? projects : projects.filter((project) => project.type === op);
 
   return (
-    <div className="mt-5 sm:mt-10">
+    <div className="mt-5 pb-20 sm:mt-10">
       <div className="mb-5 flex items-center justify-between">
         <SubHeading heading={"Projects"} icon={<GoProjectRoadmap />} />
         <select
@@ -42,6 +42,7 @@ function Projects() {
             skills,
             github,
             link,
+            video,
           }) => (
             <Project
               type="project"
@@ -54,6 +55,7 @@ function Projects() {
               skills={skills}
               github={github}
               link={link}
+              video={video}
             />
           ),
         )}
