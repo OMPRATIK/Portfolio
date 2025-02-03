@@ -1,10 +1,6 @@
-import { useState } from "react";
-
 import { LiaCertificateSolid } from "react-icons/lia";
-import Skill from "./Skill";
-import SubHeading from "../components/SubHeading";
 
-import CertificateModal from "./CertificateModal";
+import SubHeading from "../components/SubHeading";
 
 import certificates from "../data/certificates";
 import Certificate from "./Certificate";
