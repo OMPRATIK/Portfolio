@@ -18,4 +18,5 @@ function Status({ children }) {
 Status.propTypes = {
   children: PropTypes.any,
 };
+
 export default Status;

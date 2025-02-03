@@ -8,6 +8,7 @@ import Modal from "../components/Modal";
 import ContactForm from "./ContactForm";
 
 import cv from "/cv.pdf";
+
 function User() {
   const [openModal, setOpenModal] = useState(false);
 
