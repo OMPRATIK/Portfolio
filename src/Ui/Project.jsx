@@ -57,20 +57,12 @@ function Project({
                 {status === "onProgress" && <OnProgress />}
               </div>
 
-              <p className="mb-2 hidden text-zinc-300 sm:block">
-                {description}
-              </p>
+              <p className="mb-2 hidden sm:block">{description}</p>
             </div>
           </div>
         </div>
         {openModal && (
           <div className={"mb-4"}>
-            {/* <ReactPlayer
-              url={"https://www.youtube.com/watch?v=FeGwwIEKrJU"}
-              className="rounded-md"
-              width={"100%"}
-              height={`${isSmallScreen ? "180px" : "300px"}`}
-            /> */}
             <ProjectVideo src={video} />
           </div>
         )}

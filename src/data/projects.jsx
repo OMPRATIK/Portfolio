@@ -5,11 +5,14 @@ import {
   SiAxios,
   SiExpress,
   SiFastapi,
+  SiGooglegemini,
   SiJavascript,
   SiJsonwebtokens,
   SiLeaflet,
   SiMongodb,
   SiMongoose,
+  SiMysql,
+  SiPhp,
   SiReacthookform,
   SiReactquery,
   SiReactrouter,
@@ -35,10 +38,32 @@ import UsePopcorn from "/Projects/usePopcorn.webp";
 import TaskManger from "/Projects/taskManager.webp";
 import Store from "/Projects/store.webp";
 import Omnifood from "/Projects/omnifood.webp";
+import proMa from "/Projects/proMa.webp";
 
 import omnifoodVideo from "/projectVideos/omnifood.mp4";
+import proMaVideo from "/projectVideos/proma.mp4";
 
 const projects = [
+  {
+    name: "Pro-Ma",
+    status: "notLive",
+    image: proMa,
+    contributors: ["Pratik Rout"],
+    description:
+      "A smart app to manage projects and generate innovative ideas using AI. Streamline workflows, track progress, and get inspired with tailored suggestions for your next big project.",
+    skills: [
+      { name: "HTML5", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <IoLogoCss3 /> },
+      { name: "Javascript", icon: <SiJavascript /> },
+      { name: "My SQL", icon: <SiMysql /> },
+      { name: "PHP", icon: <SiPhp /> },
+      { name: "Gemini API", icon: <SiGooglegemini /> },
+    ],
+    type: "Full-stack",
+    github: "https://github.com/OMPRATIK/Proma",
+    link: "",
+    video: proMaVideo,
+  },
   {
     name: "Virtual-garden",
     status: "onProgress",

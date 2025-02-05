@@ -11,17 +11,17 @@ function Certificate({ certificate }) {
         <img
           src={certificate.image}
           alt={`${certificate.name} certificate`}
-          onClick={() => setOpenModal(name)}
+          onClick={() => setOpenModal(true)}
           className="cursor-pointer rounded-md transition-transform ease-in-out hover:scale-110"
         />
       </div>
       <CertificateModal
         image={certificate.image}
-        openModal={openModal === name}
+        openModal={openModal}
         setOpenModal={setOpenModal}
       />
       <div className="flex flex-grow flex-col justify-between gap-1">
-        <h3 className="text-xl font-semibold">{name}</h3>
+        <h3 className="text-xl font-semibold">{certificate.name}</h3>
         <p className="text-sm opacity-75">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque
           id perferendis deserunt cumque in sapiente illum obcaecati sed iusto.

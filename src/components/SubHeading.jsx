@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function SubHeading({ heading, icon }) {
   return (
-    <h2 className="flex items-center gap-2 text-xl font-semibold sm:text-2xl">
+    <h2 className="flex items-center gap-2 text-xl sm:text-2xl">
       {heading} {icon}
     </h2>
   );
