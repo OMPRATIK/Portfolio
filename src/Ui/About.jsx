@@ -25,10 +25,11 @@ function About() {
 
       <div>
         <div className="flex flex-col gap-1.5 sm:gap-3 sm:text-xl">
-          <p className="mb-4 text-base">
-            hi👋,I am a pre-final year Computer Science student and a Full-stack
-            developer. Primarily focused on frontend technologies like React, I
-            also excel in backend development using Node.js and Go.
+          <p className="mb-4 text-base sm:text-lg">
+            Hi👋, I am a pre-final year Computer Science student and a
+            Full-stack developer. Primarily focused on frontend technologies
+            like React, I also excel in backend development using Node.js and
+            Go.
           </p>
         </div>
         <ul className="">

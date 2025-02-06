@@ -4,13 +4,12 @@ import { TbPinnedFilled } from "react-icons/tb";
 
 import SubHeading from "../components/SubHeading";
 import Carousel from "../components/Carousel";
-
-import pinnedProjects from "../data/pinnedProjects.jsx";
+import projects from "../data/projects";
 import Project from "./Project.jsx";
 
 function PinnedProjects() {
   const [itemIdx, setItemIdx] = useState(0);
-
+  const pinnedProjects = projects.slice(0, 3);
   return (
     <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
@@ -42,6 +41,7 @@ function PinnedProjects() {
             skills,
             github,
             link,
+            video,
           }) => {
             return (
               <Project
@@ -54,6 +54,7 @@ function PinnedProjects() {
                 skills={skills}
                 github={github}
                 link={link}
+                video={video}
               />
             );
           },

@@ -3,8 +3,10 @@ import { IoLogoCss3 } from "react-icons/io";
 import { FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiAxios,
+  SiDaisyui,
   SiExpress,
   SiFastapi,
+  SiGoogle,
   SiGooglegemini,
   SiJavascript,
   SiJsonwebtokens,
@@ -17,6 +19,7 @@ import {
   SiReactquery,
   SiReactrouter,
   SiRedux,
+  SiSocketdotio,
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
@@ -39,31 +42,64 @@ import TaskManger from "/Projects/taskManager.webp";
 import Store from "/Projects/store.webp";
 import Omnifood from "/Projects/omnifood.webp";
 import proMa from "/Projects/proMa.webp";
+import yap from "/Projects/yap.webp";
+import searchSpace from "/Projects/searchSpace.webp";
 
 import omnifoodVideo from "/projectVideos/omnifood.mp4";
 import proMaVideo from "/projectVideos/proma.mp4";
+import quizzoVideo from "/projectVideos/quizzo.mp4";
+import yapVideo from "/projectVideos/yap.mp4";
+import searchSpaceVideo from "/projectVideos/searchSpace.mp4";
 
 const projects = [
   {
-    name: "Pro-Ma",
-    status: "notLive",
-    image: proMa,
+    name: "Search Space",
+    status: "live",
+    image: searchSpace,
     contributors: ["Pratik Rout"],
     description:
-      "A smart app to manage projects and generate innovative ideas using AI. Streamline workflows, track progress, and get inspired with tailored suggestions for your next big project.",
+      "This is a responsive full-stack application that demonstrates a robust search functionality for a questions database using modern web technologies like gRPC. Advance filtering options, selecting no of responses per page, filter based on type of questions, pagination and advance search with mongo DB",
     skills: [
-      { name: "HTML5", icon: <FaHtml5 /> },
-      { name: "CSS", icon: <IoLogoCss3 /> },
-      { name: "Javascript", icon: <SiJavascript /> },
-      { name: "My SQL", icon: <SiMysql /> },
-      { name: "PHP", icon: <SiPhp /> },
-      { name: "Gemini API", icon: <SiGooglegemini /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Tailwindcss", icon: <SiTailwindcss /> },
+      { name: "Typescript", icon: <SiTypescript /> },
+      { name: "Node.jS", icon: <FaNodeJs /> },
+      { name: "Express JS", icon: <SiExpress /> },
+      { name: "gRPC", icon: <SiGoogle /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Mongoose", icon: <SiMongoose /> },
     ],
     type: "Full-stack",
-    github: "https://github.com/OMPRATIK/Proma",
-    link: "",
-    video: proMaVideo,
+    github: "https://github.com/OMPRATIK/SpeakX",
+    link: "https://speakx-8yjv.onrender.com",
+    video: searchSpaceVideo,
   },
+  {
+    name: "Yap!",
+    status: "live",
+    image: yap,
+    contributors: ["Pratik Rout"],
+    description:
+      "Yap is a feature-rich chat application that offers 32 customizable themes, seamless image uploads, and a fully responsive UI for optimal user experience. Designed to enhance modern communication.",
+    skills: [
+      { name: "React", icon: <FaReact /> },
+      { name: "React-router", icon: <SiReactrouter /> },
+      { name: "Tailwindcss", icon: <SiTailwindcss /> },
+      { name: "Axios", icon: <SiAxios /> },
+      { name: "Daisy UI", icon: <SiDaisyui /> },
+      { name: "Node.jS", icon: <FaNodeJs /> },
+      { name: "JWT", icon: <SiJsonwebtokens /> },
+      { name: "Express JS", icon: <SiExpress /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Mongoose", icon: <SiMongoose /> },
+      { name: "Socket.io", icon: <SiSocketdotio /> },
+    ],
+    type: "Full-stack",
+    github: "https://github.com/OMPRATIK/Yap",
+    link: "https://yap-ddgx.onrender.com/",
+    video: yapVideo,
+  },
+
   {
     name: "Virtual-garden",
     status: "onProgress",
@@ -93,8 +129,28 @@ const projects = [
     video: "",
   },
   {
-    name: "Quizzo",
+    name: "Pro-Ma",
     status: "notLive",
+    image: proMa,
+    contributors: ["Pratik Rout"],
+    description:
+      "A smart app to manage projects and generate innovative ideas using AI. Streamline workflows, track progress, and get inspired with tailored suggestions for your next big project. Perfect for individuals, teams, and businesses looking to stay organized and creative.",
+    skills: [
+      { name: "HTML5", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <IoLogoCss3 /> },
+      { name: "Javascript", icon: <SiJavascript /> },
+      { name: "My SQL", icon: <SiMysql /> },
+      { name: "PHP", icon: <SiPhp /> },
+      { name: "Gemini API", icon: <SiGooglegemini /> },
+    ],
+    type: "Full-stack",
+    github: "https://github.com/OMPRATIK/Proma",
+    link: "",
+    video: proMaVideo,
+  },
+  {
+    name: "Quizzo",
+    status: "live",
     image: QuizzoImage,
     contributors: ["Pratik Rout"],
     description:
@@ -107,8 +163,8 @@ const projects = [
     ],
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Quizzo",
-    link: "",
-    video: "",
+    link: "https://quizzo-78j9.onrender.com",
+    video: quizzoVideo,
   },
   {
     name: "The Wild Oasis",
@@ -261,7 +317,7 @@ const projects = [
   },
   {
     name: "Omnifood",
-    status: "notLive",
+    status: "live",
     image: Omnifood,
     contributors: ["Pratik Rout"],
     description:
@@ -272,7 +328,7 @@ const projects = [
     ],
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Omnifood",
-    link: "",
+    link: "http://ompratik.me/Omnifood/",
     video: omnifoodVideo,
   },
   {

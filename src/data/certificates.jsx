@@ -3,6 +3,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiMongodb } from "react-icons/si";
 import { FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
 import { RiNewspaperLine } from "react-icons/ri";
+import { TbCloudComputing } from "react-icons/tb";
 
 import ApnaCollege from "/Certificates/alpha2.webp";
 import CipherSchools from "/Certificates/core_java_cipher_schools.webp";
@@ -12,8 +13,15 @@ import MongoDB from "/Certificates/mongoDB_basics.webp";
 import ProblemSolving from "/Certificates/problem_solving_basic-.webp";
 import PythonCertificate from "/Certificates/python_basic-.webp";
 import ReactCertificate from "/Certificates/react_basiccertificate-.webp";
+import nptelCloud from "/Certificates/nptel_cloud.webp";
 
 const certificates = [
+  {
+    name: "NPTEL: Cloud Computing",
+    image: nptelCloud,
+    skills: [{ name: "Cloud Computing", icon: <TbCloudComputing /> }],
+  },
+
   {
     name: "Udemy: PostgreSQL",
     image: Sql,

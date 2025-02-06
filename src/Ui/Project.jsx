@@ -93,9 +93,9 @@ function ProjectMetaData({ link, github, setOpenModal, openModal }) {
   return (
     <div className="flex gap-2.5 text-xl">
       {link !== "" ? (
-        <button>
+        <Link to={link} target="_blank" className="text-green-500">
           <MdLink />
-        </button>
+        </Link>
       ) : (
         <MdLinkOff className="text-red-400" />
       )}
