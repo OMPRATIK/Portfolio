@@ -50,6 +50,8 @@ import proMaVideo from "/projectVideos/proma.mp4";
 import quizzoVideo from "/projectVideos/quizzo.mp4";
 import yapVideo from "/projectVideos/yap.mp4";
 import searchSpaceVideo from "/projectVideos/searchSpace.mp4";
+import sparksVideo from "/projectVideos/sparks.mp4";
+import virtualGardenVideo from "/projectVideos/virtualGarden.mp4";
 
 const projects = [
   {
@@ -80,7 +82,7 @@ const projects = [
     image: yap,
     contributors: ["Pratik Rout"],
     description:
-      "Yap is a feature-rich chat application that offers 32 customizable themes, seamless image uploads, and a fully responsive UI for optimal user experience. Designed to enhance modern communication.",
+      "Yap is a feature-rich chat application that offers 32 customizable themes, seamless image uploads, and a fully responsive UI for optimal user experience. It is a cutting-edge chat app that provides real-time communication and designed to enhance modern communication.",
     skills: [
       { name: "React", icon: <FaReact /> },
       { name: "React-router", icon: <SiReactrouter /> },
@@ -126,7 +128,7 @@ const projects = [
     type: "Full-stack",
     github: "",
     link: "",
-    video: "",
+    video: virtualGardenVideo,
   },
   {
     name: "Pro-Ma",
@@ -260,7 +262,7 @@ const projects = [
   },
   {
     name: "Fast-react-pizza",
-    status: "notLive",
+    status: "live",
     image: FastReactPizza,
     contributors: ["Pratik Rout"],
     description:
@@ -273,12 +275,12 @@ const projects = [
     ],
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Fast-react-pizza-co",
-    link: "",
+    link: "http://ompratik.me/Fast-react-pizza-co/",
     video: "",
   },
   {
     name: "Sparks",
-    status: "notLive",
+    status: "live",
     image: Sparks,
     contributors: ["Pratik Rout"],
     description:
@@ -295,13 +297,13 @@ const projects = [
     ],
     type: "Full-stack",
     github: "https://github.com/OMPRATIK/Sparks-Blog-App",
-    link: "",
-    video: "",
+    link: "https://sparks-blog-app.onrender.com/",
+    video: sparksVideo,
   },
 
   {
     name: "Use-popcorn",
-    status: "notLive",
+    status: "live",
     image: UsePopcorn,
     contributors: ["Pratik Rout"],
     description:
@@ -312,7 +314,7 @@ const projects = [
     ],
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Use-Popcorn",
-    link: "",
+    link: "http://ompratik.me/Use-Popcorn/",
     video: "",
   },
   {

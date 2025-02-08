@@ -49,6 +49,7 @@ function Project({
                     openModal={openModal}
                     github={github}
                     link={link}
+                    video={video}
                   />
                 </div>
 
@@ -89,7 +90,7 @@ function Project({
   );
 }
 
-function ProjectMetaData({ link, github, setOpenModal, openModal }) {
+function ProjectMetaData({ link, github, setOpenModal, openModal, video }) {
   return (
     <div className="flex gap-2.5 text-xl">
       {link !== "" ? (
@@ -107,12 +108,12 @@ function ProjectMetaData({ link, github, setOpenModal, openModal }) {
         <FiGithub className="text-red-400" />
       )}
 
-      <button onClick={() => setOpenModal((openModal) => !openModal)}>
-        {!openModal ? (
-          <FaRegEye className="text-yellow-200 hover:text-yellow-100" />
-        ) : (
-          <FaRegEyeSlash className="text-yellow-200 hover:text-yellow-100" />
-        )}
+      <button
+        onClick={() => setOpenModal((openModal) => !openModal)}
+        disabled={!video}
+        className="text-yellow-200 hover:text-yellow-100 disabled:opacity-15"
+      >
+        {!openModal ? <FaRegEye /> : <FaRegEyeSlash />}
       </button>
     </div>
   );
@@ -136,6 +137,7 @@ ProjectMetaData.propTypes = {
   github: PropTypes.string,
   setOpenModal: PropTypes.func,
   openModal: PropTypes.bool,
+  video: PropTypes.string,
 };
 
 export default Project;
