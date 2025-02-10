@@ -44,6 +44,7 @@ import Omnifood from "/Projects/omnifood.webp";
 import proMa from "/Projects/proMa.webp";
 import yap from "/Projects/yap.webp";
 import searchSpace from "/Projects/searchSpace.webp";
+import Spoon from "/Projects/spoon.webp";
 
 import omnifoodVideo from "/projectVideos/omnifood.mp4";
 import proMaVideo from "/projectVideos/proma.mp4";
@@ -358,6 +359,24 @@ const projects = [
     contributors: ["Pratik Rout"],
     description:
       "Store API is a back-end application that enables users to perform advanced filtering on product data. Built with Node.js and Express, it provides a robust API that allows for complex queries and efficient data management using MongoDB and Mongoose.",
+    skills: [
+      { name: "Node.jS", icon: <FaNodeJs /> },
+      { name: "Express JS", icon: <SiExpress /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Mongoose", icon: <SiMongoose /> },
+    ],
+    type: "Back-end",
+    github: "https://github.com/OMPRATIK/Store-API",
+    link: "",
+    video: "",
+  },
+  {
+    name: "Spoon",
+    status: "notLive",
+    image: Spoon,
+    contributors: ["Pratik Rout"],
+    description:
+      "Spoon connects you to a vast culinary world through the Spoonacular API, offering diverse recipes and cooking information. Users can explore recipes",
     skills: [
       { name: "Node.jS", icon: <FaNodeJs /> },
       { name: "Express JS", icon: <SiExpress /> },
