@@ -1,6 +1,6 @@
 import { TbBrandThreejs } from "react-icons/tb";
 import { IoLogoCss3 } from "react-icons/io";
-import { FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAngular, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiAxios,
   SiDaisyui,
@@ -378,13 +378,12 @@ const projects = [
     description:
       "Spoon connects you to a vast culinary world through the Spoonacular API, offering diverse recipes and cooking information. Users can explore recipes",
     skills: [
-      { name: "Node.jS", icon: <FaNodeJs /> },
-      { name: "Express JS", icon: <SiExpress /> },
-      { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "Mongoose", icon: <SiMongoose /> },
+      { name: "Typescript", icon: <SiTypescript /> },
+      { name: "Angular", icon: <FaAngular /> },
+      { name: "CSS", icon: <IoLogoCss3 /> },
     ],
-    type: "Back-end",
-    github: "https://github.com/OMPRATIK/Store-API",
+    type: "Front-end",
+    github: "https://github.com/OMPRATIK/Spoon",
     link: "",
     video: "",
   },
