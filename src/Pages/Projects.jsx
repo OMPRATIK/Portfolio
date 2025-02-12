@@ -18,7 +18,7 @@ function Projects() {
   });
 
   return (
-    <div className="flex min-h-screen flex-col pb-20 pt-4 sm:mt-10">
+    <div className="flex min-h-screen flex-col pt-4 sm:pt-10">
       <div className="mb-2 flex items-center justify-between sm:mb-5">
         <SubHeading heading={"Projects"} icon={<GoProjectRoadmap />} />
         <div className="space-x-3 text-sm sm:text-base">
@@ -52,35 +52,48 @@ function Projects() {
           No Projects Found
         </div>
       )}
-      <div className="flex flex-col gap-2">
-        {filteredProjects.map(
-          ({
-            name,
-            image,
-            status,
-            contributors,
-            description,
-            skills,
-            github,
-            link,
-            video,
-          }) => (
-            <Project
-              type="project"
-              key={name}
-              name={name}
-              image={image}
-              status={status}
-              contributors={contributors}
-              description={description}
-              skills={skills}
-              github={github}
-              link={link}
-              video={video}
-            />
-          ),
-        )}
-      </div>
+      {filteredProjects.length > 0 && (
+        <div
+          className="flex h-[calc(100vh-3.5rem)] overflow-hidden rounded-tl-md rounded-tr-md
+            sm:h-[calc(100vh-6rem)]"
+        >
+          <div
+            className="flex-grow space-y-2 overflow-scroll pb-20
+              [&::-webkit-scrollbar-thumb]:bg-gray-300
+              dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500
+              [&::-webkit-scrollbar-track]:bg-gray-100
+              dark:[&::-webkit-scrollbar-track]:bg-neutral-700 sm:[&::-webkit-scrollbar]:w-1.5"
+          >
+            {filteredProjects.map(
+              ({
+                name,
+                image,
+                status,
+                contributors,
+                description,
+                skills,
+                github,
+                link,
+                video,
+              }) => (
+                <Project
+                  type="project"
+                  key={name}
+                  name={name}
+                  image={image}
+                  status={status}
+                  contributors={contributors}
+                  description={description}
+                  skills={skills}
+                  github={github}
+                  link={link}
+                  video={video}
+                />
+              ),
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Skills() {
       <div className="mb-3 flex justify-between sm:mb-3">
         <SubHeading heading="Skills And Tools" icon={<FaTools />} />
         <div className="flex items-center gap-2">
-          <FaFilter className="text-zinc-400" />
+          <FaFilter className="text-sm text-zinc-400" />
           <select
             value={skillsType}
             onChange={(e) => setSkillsType(e.target.value)}

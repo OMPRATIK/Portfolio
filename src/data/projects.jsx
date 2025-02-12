@@ -328,6 +328,7 @@ const projects = [
     skills: [
       { name: "HTML5", icon: <FaHtml5 /> },
       { name: "CSS", icon: <IoLogoCss3 /> },
+      { name: "Javascript", icon: <SiJavascript /> },
     ],
     type: "Front-end",
     github: "https://github.com/OMPRATIK/Omnifood",

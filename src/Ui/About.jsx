@@ -1,7 +1,8 @@
-import { FaCircle } from "react-icons/fa";
+import { FaArrowCircleRight, FaCircle } from "react-icons/fa";
 
 import Socials from "./Socials";
 import { Link } from "react-router-dom";
+import Highlight from "../components/Highlight";
 
 function About() {
   return (
@@ -26,17 +27,29 @@ function About() {
       <div>
         <div className="flex flex-col gap-1.5 sm:gap-3 sm:text-xl">
           <p className="mb-4 text-base sm:text-lg">
-            Hi👋, I am a pre-final year Computer Science student and a
-            Full-stack developer. Primarily focused on frontend technologies
-            like React, I also excel in backend development using Node.js and
-            Go.
+            Hi, I am a pre-final year <Highlight>Computer Science</Highlight>{" "}
+            student and a <Highlight>Full-stack developer</Highlight>. Primarily
+            focused on frontend technologies like React, I also excel in backend
+            development using Node.js and Go.
           </p>
         </div>
         <ul className="">
-          <li>💠Pre-final Computer Science student</li>
-          <li>💠Full-stack Developer</li>
-          <li>💠Strong foundation in problem solving</li>
-          <li>💠600+ DSA problems solved</li>
+          <li className="flex items-center gap-1.5">
+            <FaArrowCircleRight />
+            Pre-final Computer Science student
+          </li>
+          <li className="flex items-center gap-1.5">
+            <FaArrowCircleRight />
+            Full-stack Developer
+          </li>
+          <li className="flex items-center gap-1.5">
+            <FaArrowCircleRight />
+            Strong foundation in problem solving
+          </li>
+          <li className="flex items-center gap-1.5">
+            <FaArrowCircleRight />
+            600+ DSA problems solved
+          </li>
         </ul>
 
         <div className="flex justify-end">
