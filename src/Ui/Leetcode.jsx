@@ -3,14 +3,13 @@ import SubHeading from "../components/SubHeading";
 import LeetCodeCalendar from "leetcode-calendar";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
 const theme = {
   dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
 };
 
 function Leetcode() {
   return (
-    <section className="mb-6 sm:mb-10">
+    <section className="mb-6 mt-5 sm:mb-10 sm:mt-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
         <SubHeading heading="Leetcode" icon={<SiLeetcode />} />
         <Link
@@ -30,11 +29,12 @@ function Leetcode() {
           <img
             src="https://leetcard.jacoblin.cool/OMPRATIK?border=0&theme=transparent&font=inconsolata"
             className="w-full sm:w-[60%]"
+            loading="lazy"
           />
           <ul className="hidden p-2 text-base text-zinc-400 sm:flex sm:flex-col sm:gap-2">
             <li>
               I thrive on tackling complex problems and continuously seek to
-              improve my coding proficiency. I have solved more than 500
+              improve my coding proficiency. I have solved more than 600
               questions.
             </li>
           </ul>

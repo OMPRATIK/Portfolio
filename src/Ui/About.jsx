@@ -2,7 +2,6 @@ import { FaArrowCircleRight, FaCircle } from "react-icons/fa";
 
 import Socials from "./Socials";
 import { Link } from "react-router-dom";
-import Highlight from "../components/Highlight";
 
 function About() {
   return (
@@ -26,28 +25,29 @@ function About() {
 
       <div>
         <div className="flex flex-col gap-1.5 sm:gap-3 sm:text-xl">
-          <p className="mb-4 text-base sm:text-lg">
-            Hi, I am a pre-final year <Highlight>Computer Science</Highlight>{" "}
-            student and a <Highlight>Full-stack developer</Highlight>. Primarily
-            focused on frontend technologies like React, I also excel in backend
-            development using Node.js and Go.
+          <p className="mb-4">
+            I’m a passionate software engineer who loves crafting robust,
+            scalable, and efficient applications to solve real-world problems.
+            With a strong foundation in software development and a curiosity for
+            technology, I specialize in designing systems that scale seamlessly
+            while delivering exceptional user experiences
           </p>
         </div>
         <ul className="">
           <li className="flex items-center gap-1.5">
-            <FaArrowCircleRight />
+            <FaArrowCircleRight className="text-yellow-200" />
             Pre-final Computer Science student
           </li>
           <li className="flex items-center gap-1.5">
-            <FaArrowCircleRight />
+            <FaArrowCircleRight className="text-yellow-200" />
             Full-stack Developer
           </li>
           <li className="flex items-center gap-1.5">
-            <FaArrowCircleRight />
+            <FaArrowCircleRight className="text-yellow-200" />
             Strong foundation in problem solving
           </li>
           <li className="flex items-center gap-1.5">
-            <FaArrowCircleRight />
+            <FaArrowCircleRight className="text-yellow-200" />
             600+ DSA problems solved
           </li>
         </ul>

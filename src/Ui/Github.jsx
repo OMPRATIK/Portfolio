@@ -3,14 +3,13 @@ import SubHeading from "../components/SubHeading";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import GitHubCalendar from "react-github-calendar";
-
 const theme = {
   dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
 };
 
 function Github() {
   return (
-    <section className="mb-6 mt-5 sm:mb-10 sm:mt-10">
+    <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">
         <SubHeading heading={"Github"} icon={<FiGithub />} />
         <Link
@@ -31,6 +30,7 @@ function Github() {
             src="https://github-readme-stats.vercel.app/api?username=OMPRATIK&theme=dark&show_icons=true&hide_border=true&count_private=true"
             alt="GitHub Streak"
             className="w-full sm:w-[60%]"
+            loading="lazy"
           />
 
           <div className="hidden flex-col justify-between sm:flex">

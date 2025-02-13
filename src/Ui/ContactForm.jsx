@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 function ContactForm() {
   return (
     <form
-      className="flex w-[300px] flex-col gap-5 rounded-md border-[1px] border-zinc-700
-        bg-zinc-900 p-4 sm:w-full sm:p-6"
+      className="flex w-full flex-col gap-5 rounded-md border-[1px] border-zinc-700 bg-zinc-900
+        p-4 sm:p-6"
     >
       <div className="">
         <h1 className="text-base sm:text-2xl">Let&apos;s work together🤝</h1>

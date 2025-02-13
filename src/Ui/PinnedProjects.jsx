@@ -9,7 +9,7 @@ import Project from "./Project.jsx";
 
 function PinnedProjects() {
   const [itemIdx, setItemIdx] = useState(0);
-  const pinnedProjects = projects.slice(0, 3);
+  const pinnedProjects = projects.filter((project) => project.pinned);
   return (
     <section className="mb-6 sm:mb-10">
       <div className="mb-1.5 flex items-center justify-between sm:mb-3">

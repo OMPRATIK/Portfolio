@@ -2,6 +2,7 @@ import { useState } from "react";
 import CertificateModal from "./CertificateModal";
 import Skill from "./Skill";
 import PropTypes from "prop-types";
+import Highlight from "../components/Highlight";
 
 function Certificate({ certificate }) {
   const [openModal, setOpenModal] = useState(false);
@@ -20,12 +21,12 @@ function Certificate({ certificate }) {
         openModal={openModal}
         setOpenModal={setOpenModal}
       />
-      <div className="flex flex-grow flex-col justify-between gap-1">
-        <h3 className="text-xl font-semibold">{certificate.name}</h3>
-        <p className="text-sm opacity-75">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque
-          id perferendis deserunt cumque in sapiente illum obcaecati sed iusto.
-        </p>
+      <div className="flex flex-grow flex-col gap-2">
+        <h3 className="text-xl font-semibold">
+          <Highlight>{certificate.name}</Highlight>
+        </h3>
+        <p className="text-sm opacity-75">{certificate.description}</p>
+
         <div className="flex flex-wrap items-center gap-1">
           <p className="text-sm font-semibold">Skills: </p>
           {certificate.skills.map((skill) => (

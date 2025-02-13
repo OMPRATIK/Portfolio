@@ -76,6 +76,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/SpeakX",
     link: "https://speakx-8yjv.onrender.com",
     video: searchSpaceVideo,
+    pinned: false,
   },
   {
     name: "Yap!",
@@ -101,8 +102,8 @@ const projects = [
     github: "https://github.com/OMPRATIK/Yap",
     link: "https://yap-ddgx.onrender.com/",
     video: yapVideo,
+    pinned: true,
   },
-
   {
     name: "Virtual-garden",
     status: "onProgress",
@@ -130,6 +131,7 @@ const projects = [
     github: "",
     link: "",
     video: virtualGardenVideo,
+    pinned: true,
   },
   {
     name: "Pro-Ma",
@@ -150,6 +152,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Proma",
     link: "",
     video: proMaVideo,
+    pinned: false,
   },
   {
     name: "Quizzo",
@@ -168,6 +171,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Quizzo",
     link: "https://quizzo-78j9.onrender.com",
     video: quizzoVideo,
+    pinned: true,
   },
   {
     name: "The Wild Oasis",
@@ -188,6 +192,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/The-Wild-Oasis",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "JWT Basics",
@@ -205,6 +210,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/JWT-Basics",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "Jobs API",
@@ -224,6 +230,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Jobs-API",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "Mapty",
@@ -242,6 +249,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Mapty",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "World Wise",
@@ -260,6 +268,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/WorldWise",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "Fast-react-pizza",
@@ -278,6 +287,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Fast-react-pizza-co",
     link: "http://ompratik.me/Fast-react-pizza-co/",
     video: "",
+    pinned: false,
   },
   {
     name: "Sparks",
@@ -285,7 +295,7 @@ const projects = [
     image: Sparks,
     contributors: ["Pratik Rout"],
     description:
-      "Sparks is a full-stack CRUD application that allows users to create, delete, and update blog posts with authentication and authorization features. Built with React, Node.js, and Express, it provides a secure and seamless platform for bloggers to manage their content.",
+      "Sparks is a full-stack CRUD blog application that allows users to create, delete, and update blog posts with authentication and authorization features. Built with React, Node.js, and Express, it provides a secure and seamless platform for bloggers to manage their content.",
     skills: [
       { name: "React", icon: <FaReact /> },
       { name: "React-router", icon: <SiReactrouter /> },
@@ -300,8 +310,8 @@ const projects = [
     github: "https://github.com/OMPRATIK/Sparks-Blog-App",
     link: "https://sparks-blog-app.onrender.com/",
     video: sparksVideo,
+    pinned: true,
   },
-
   {
     name: "Use-popcorn",
     status: "live",
@@ -317,6 +327,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Use-Popcorn",
     link: "http://ompratik.me/Use-Popcorn/",
     video: "",
+    pinned: false,
   },
   {
     name: "Omnifood",
@@ -334,6 +345,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Omnifood",
     link: "http://ompratik.me/Omnifood/",
     video: omnifoodVideo,
+    pinned: false,
   },
   {
     name: "Task-managr API",
@@ -352,6 +364,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/TaskManagerAPI",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "Store API",
@@ -370,6 +383,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Store-API",
     link: "",
     video: "",
+    pinned: false,
   },
   {
     name: "Spoon",
@@ -387,6 +401,7 @@ const projects = [
     github: "https://github.com/OMPRATIK/Spoon",
     link: "",
     video: "",
+    pinned: false,
   },
 ];
 
