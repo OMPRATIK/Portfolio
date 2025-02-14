@@ -54,7 +54,7 @@ const certificates = [
     image: MongoDB,
     skills: [{ name: "MongoDB", icon: <SiMongodb /> }],
     description:
-      "Issued by MongoDB, Inc on November 7, 2024, this certification validates my foundational knowledge of MongoDB, including CRUD operations and document-based data models.",
+      "Issued by MongoDB, Inc on July 11, 2024, this certification validates my foundational knowledge of MongoDB, including CRUD operations and document-based data models.",
   },
   {
     name: "Hackerrank: Problem Solving",
