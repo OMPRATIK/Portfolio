@@ -8,7 +8,7 @@ import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
 
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { FaCrown, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import ProjectVideo from "./ProjectVideo";
 
 function Project({
@@ -22,9 +22,9 @@ function Project({
   github,
   link,
   video,
+  pinned,
 }) {
   const [openModal, setOpenModal] = useState(false);
-
   return (
     <div
       className={`flex ${type ? "w-full" : "w-[95%]"} shrink-0 flex-col gap-4 rounded-md
@@ -53,9 +53,14 @@ function Project({
                   />
                 </div>
 
-                {status === "notLive" && <NotLive />}
-                {status === "live" && <Live />}
-                {status === "onProgress" && <OnProgress />}
+                <div className="flex items-center gap-2">
+                  {pinned && (
+                    <FaCrown className="animate-pulse text-yellow-500" />
+                  )}
+                  {status === "notLive" && <NotLive />}
+                  {status === "live" && <Live />}
+                  {status === "onProgress" && <OnProgress />}
+                </div>
               </div>
 
               <p className="mb-2 hidden sm:block">{description}</p>
@@ -130,6 +135,7 @@ Project.propTypes = {
   github: PropTypes.string,
   link: PropTypes.string,
   video: PropTypes.string,
+  pinned: PropTypes.bool,
 };
 
 ProjectMetaData.propTypes = {

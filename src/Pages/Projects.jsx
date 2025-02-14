@@ -4,6 +4,8 @@ import { GoProjectRoadmap } from "react-icons/go";
 import SubHeading from "../components/SubHeading";
 import projects from "../data/projects";
 import Project from "../Ui/Project";
+import { Link } from "react-router-dom";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const options = ["All", "Front-end", "Back-end", "Full-stack"];
 
@@ -75,6 +77,7 @@ function Projects() {
                 github,
                 link,
                 video,
+                pinned,
               }) => (
                 <Project
                   type="project"
@@ -88,9 +91,19 @@ function Projects() {
                   github={github}
                   link={link}
                   video={video}
+                  pinned={pinned}
                 />
               ),
             )}
+            <div className="flex w-full items-center justify-center py-2">
+              <Link
+                className="flex items-center gap-1.5 text-blue-500 underline hover:text-blue-400"
+                to="https://github.com/OMPRATIK?tab=repositories"
+                target="_blank"
+              >
+                See more on Github <FaExternalLinkAlt className="text-xs" />
+              </Link>
+            </div>
           </div>
         </div>
       )}

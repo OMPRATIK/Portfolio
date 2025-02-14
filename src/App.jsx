@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects";
 import Profile from "./Pages/Profile";
 import NavBar from "./Ui/NavBar";
 import ResizeScreenProvider from "./hooks/resizeScreen/ResizeScreenProvider";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
           </Route>
         </Routes>
       </ResizeScreenProvider>
+      <Toaster position="top-center" />
     </>
   );
 }

@@ -35,8 +35,8 @@ function Blogs() {
           ))}
         </select>
       </div>
-      <div className="flex flex-grow items-center justify-center">
-        Coming soon...
+      <div className="flex flex-grow items-center justify-center opacity-45">
+        No Blogs Found
       </div>
     </section>
   );

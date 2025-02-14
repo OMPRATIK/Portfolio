@@ -17,7 +17,7 @@ const socialsLinks = [
     name: "Leetcode",
     link: "https://leetcode.com/u/OMPRATIK/",
   },
-  { logo: <FaXTwitter />, name: "X", link: "https://x.com/_ompratik_" },
+  { logo: <FaXTwitter />, name: "X", link: "https://x.com/_pratik2026_" },
   {
     logo: <FaInstagram />,
     name: "Instagram",

@@ -4,6 +4,7 @@ import { IoIosSend } from "react-icons/io";
 import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 function ContactForm() {
   const form = useRef();
@@ -19,9 +20,12 @@ function ContactForm() {
       })
       .then(
         () => {
+          form.current.reset();
+          toast.success("Message sent successfully!");
           console.log("SUCCESS!");
         },
         (error) => {
+          toast.error("Failed to send message!");
           console.log("FAILED...", error);
         },
       );
@@ -48,7 +52,6 @@ function ContactForm() {
             focus:outline-offset-1 focus:outline-zinc-600"
         />
         <input
-          name="user_email"
           placeholder="Email"
           type="email"
           className="rounded-md bg-zinc-800 px-2 py-1 text-zinc-300 outline-none
