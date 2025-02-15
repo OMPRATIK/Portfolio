@@ -1,11 +1,16 @@
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Time from "./Time";
-
+import { icon } from "leaflet";
 const position = [31.3223714, 75.4910179];
 
+const ICON = icon({
+  iconUrl: "./marker.png",
+  iconSize: [25, 40],
+});
+
 function LocationMarker() {
-  return <Marker position={position} />;
+  return <Marker position={position} icon={ICON} />;
 }
 
 function Map() {
