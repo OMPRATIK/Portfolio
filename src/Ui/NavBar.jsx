@@ -46,7 +46,7 @@ function NavBar() {
                     className={`relative flex items-center gap-1.5 ${ activeTab !== link &&
                     "hover:text-zinc-400" }`}
                   >
-                    {icon}
+                    <span className="text-xl sm:text-base">{icon}</span>
                     <span className="hidden sm:block">{name}</span>
                   </div>
                 </NavLink>
