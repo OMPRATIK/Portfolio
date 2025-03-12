@@ -13,6 +13,23 @@ function ContactForm() {
   const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY; // Use process.env.REACT_APP_PUBLIC_KEY for Create React App
   const sendEmail = (e) => {
     e.preventDefault();
+    const formData = new FormData(form.current);
+    const userName = formData.get("user_name");
+    const userEmail = formData.get("user_email");
+    const message = formData.get("message");
+
+    // Validate fields
+    if (!userName || !userEmail || !message) {
+      toast.error("Please fill out all fields!");
+      return;
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(userEmail)) {
+      toast.error("Please enter a valid email address!");
+      return;
+    }
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
@@ -52,6 +69,7 @@ function ContactForm() {
             focus:outline-offset-1 focus:outline-zinc-600"
         />
         <input
+          name="user_email"
           placeholder="Email"
           type="email"
           className="rounded-md bg-zinc-800 px-2 py-1 text-zinc-300 outline-none
