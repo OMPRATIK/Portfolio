@@ -78,7 +78,10 @@ function Project({
         <div>
           {contributors && (
             <div className="mb-3 flex flex-col sm:flex-row sm:gap-2">
-              <h4 className="font-semibold">Contributors</h4>
+              <h4 className="font-semibold">
+                Contributors<span className="opacity-75">(</span>s
+                <span className="opacity-75">)</span>
+              </h4>
               <ul className="flex flex-wrap items-center gap-1 text-sm text-zinc-400">
                 {contributors.join(", ")}
               </ul>

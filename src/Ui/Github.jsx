@@ -3,6 +3,7 @@ import SubHeading from "../components/SubHeading";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import GitHubCalendar from "react-github-calendar";
+
 const theme = {
   dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
 };

@@ -1,5 +1,6 @@
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
+  FaDocker,
   FaGitAlt,
   FaGithub,
   FaGuitar,
@@ -26,6 +27,7 @@ import {
   SiReactquery,
   SiReactrouter,
   SiRedux,
+  SiShadcnui,
   SiSocketdotio,
   SiStyledcomponents,
   SiTypescript,
@@ -60,6 +62,8 @@ const skills = [
   { name: "Supabase", icon: <RiSupabaseFill />, type: "backend" },
   { name: "Postman API", icon: <SiPostman />, type: "tools" },
   { name: "Leaflet", icon: <SiLeaflet />, type: "frontend" },
+  { name: "Docker", icon: <FaDocker />, type: "tools" },
+  { name: "Shadcn", icon: <SiShadcnui />, type: "frontend" },
 ];
 
 export default skills;

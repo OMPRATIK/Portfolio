@@ -48,7 +48,7 @@ function About() {
           </li>
           <li className="flex items-center gap-1.5">
             <FaArrowCircleRight className="text-yellow-200" />
-            600+ DSA problems solved
+            700+ DSA problems solved
           </li>
         </ul>
 
