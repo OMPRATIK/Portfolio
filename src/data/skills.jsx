@@ -3,7 +3,6 @@ import {
   FaDocker,
   FaGitAlt,
   FaGithub,
-  FaGuitar,
   FaHtml5,
   FaJava,
   FaNodeJs,
@@ -12,7 +11,11 @@ import {
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { IoLogoCss3 } from "react-icons/io";
-import { RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
+import {
+  RiBearSmileFill,
+  RiSupabaseFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
 
 import {
   SiAxios,
@@ -46,9 +49,10 @@ const skills = [
   { name: "Daisy UI", icon: <SiDaisyui />, type: "frontend" },
   { name: "Axios", icon: <SiAxios />, type: "frontend" },
   { name: "React-router", icon: <SiReactrouter />, type: "frontend" },
-  { name: "Zustand", icon: <FaGuitar />, type: "frontend" },
+  { name: "Zustand", icon: <RiBearSmileFill />, type: "frontend" },
   { name: "Redux-toolkit", icon: <SiRedux />, type: "frontend" },
   { name: "Styled-components", icon: <SiStyledcomponents />, type: "frontend" },
+  { name: "Shadcn", icon: <SiShadcnui />, type: "frontend" },
   { name: "Tanstack-query", icon: <SiReactquery />, type: "frontend" },
   { name: "React-hook-form", icon: <SiReacthookform />, type: "frontend" },
   { name: "Node.js", icon: <FaNodeJs />, type: "backend" },
@@ -63,7 +67,6 @@ const skills = [
   { name: "Postman API", icon: <SiPostman />, type: "tools" },
   { name: "Leaflet", icon: <SiLeaflet />, type: "frontend" },
   { name: "Docker", icon: <FaDocker />, type: "tools" },
-  { name: "Shadcn", icon: <SiShadcnui />, type: "frontend" },
 ];
 
 export default skills;

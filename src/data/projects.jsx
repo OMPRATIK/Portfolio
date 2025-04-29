@@ -19,13 +19,18 @@ import {
   SiReactquery,
   SiReactrouter,
   SiRedux,
+  SiShadcnui,
   SiSocketdotio,
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
+import {
+  RiBearSmileFill,
+  RiSupabaseFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
 
 import VirtualGarden from "/PinnedProjects/VirtualGarden.webp";
 import QuizzoImage from "/PinnedProjects/Quizzo.webp";
@@ -45,6 +50,7 @@ import proMa from "/Projects/proMa.webp";
 import yap from "/Projects/yap.webp";
 import searchSpace from "/Projects/searchSpace.webp";
 import Spoon from "/Projects/spoon.webp";
+import humanChain from "/Projects/humanChain.webp";
 
 import omnifoodVideo from "/projectVideos/omnifood.mp4";
 import proMaVideo from "/projectVideos/proma.mp4";
@@ -53,8 +59,28 @@ import yapVideo from "/projectVideos/yap.mp4";
 import searchSpaceVideo from "/projectVideos/searchSpace.mp4";
 import sparksVideo from "/projectVideos/sparks.mp4";
 import virtualGardenVideo from "/projectVideos/virtualGarden.mp4";
-
+import humanChainVideo from "/projectVideos/sparklehoodNew.mp4";
 const projects = [
+  {
+    name: "Humanchain",
+    status: "live",
+    image: humanChain,
+    contributors: ["Pratik Rout"],
+    description:
+      "Humanchain is a responsive React dashboard for tracking AI incidents, enabling users to log, search, and filter by severity (Low/Medium/High) or date. Featuring a dark/light theme toggle and visual severity indicators, it delivers real-time monitoring with modern state management for seamless issue resolution.",
+    skills: [
+      { name: "React", icon: <FaReact /> },
+      { name: "Tailwindcss", icon: <SiTailwindcss /> },
+      { name: "Typescript", icon: <SiTypescript /> },
+      { name: "Shadcn UI", icon: <SiShadcnui /> },
+      { name: "Zustand", icon: <RiBearSmileFill /> },
+    ],
+    type: "Front-end",
+    github: "https://github.com/OMPRATIK/Sparklehood",
+    link: "https://sparklehood-beryl.vercel.app/",
+    video: humanChainVideo,
+    pinned: false,
+  },
   {
     name: "Search Space",
     status: "live",
