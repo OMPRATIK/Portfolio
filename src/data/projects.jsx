@@ -59,7 +59,7 @@ import yapVideo from "/projectVideos/yap.mp4";
 import searchSpaceVideo from "/projectVideos/searchSpace.mp4";
 import sparksVideo from "/projectVideos/sparks.mp4";
 import virtualGardenVideo from "/projectVideos/virtualGarden.mp4";
-import humanChainVideo from "/projectVideos/sparklehoodNew.mp4";
+import humanChainVideo from "/projectVideos/sparklehood.mp4";
 const projects = [
   {
     name: "Humanchain",
