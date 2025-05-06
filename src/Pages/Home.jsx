@@ -8,7 +8,9 @@ import User from "../Ui/User";
 function Home() {
   return (
     <div className="pb-20">
-      <Map />
+      <div className="overflow-hidden">
+        <Map />
+      </div>
       <User />
       <About />
       <Skills />
