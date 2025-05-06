@@ -4,7 +4,7 @@ function Skill({ name, icon, type = "default" }) {
   const isTech = type === "tech";
   return (
     <div
-      className={`flex items-center justify-center gap-2 rounded-md ${ !isTech &&
+      className={`flex items-center justify-center gap-2 rounded-sm ${ !isTech &&
         "border-[1px] border-zinc-700" } ${isTech ? "bg-zinc-900" : "bg-zinc-800"}
         ${isTech ? "px-2" : "px-3"} ${isTech ? "py-1" : "py-1"}`}
     >

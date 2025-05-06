@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { FiGithub } from "react-icons/fi";
-import { MdLink, MdLinkOff } from "react-icons/md";
+
 import { Link } from "react-router-dom";
 import Skill from "./Skill";
 import NotLive from "../components/projectStatus/NotLive";
@@ -8,8 +8,9 @@ import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
 
-import { FaCrown, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye, FaRegEyeSlash, FaStar } from "react-icons/fa";
 import ProjectVideo from "./ProjectVideo";
+import { FaLink, FaLinkSlash } from "react-icons/fa6";
 
 function Project({
   image,
@@ -55,7 +56,7 @@ function Project({
 
                 <div className="flex items-center gap-2">
                   {pinned && (
-                    <FaCrown className="animate-pulse text-yellow-500" />
+                    <FaStar className="animate-pulse text-yellow-500" />
                   )}
                   {status === "notLive" && <NotLive />}
                   {status === "live" && <Live />}
@@ -103,10 +104,10 @@ function ProjectMetaData({ link, github, setOpenModal, openModal, video }) {
     <div className="flex gap-2.5 text-xl">
       {link !== "" ? (
         <Link to={link} target="_blank" className="text-green-500">
-          <MdLink />
+          <FaLink />
         </Link>
       ) : (
-        <MdLinkOff className="text-red-400" />
+        <FaLinkSlash className="text-red-400" />
       )}
       {github !== "" ? (
         <Link to={github} target="_blank">
