@@ -16,7 +16,7 @@ function AboutProfile() {
         </p>
         <p className="flex gap-2">
           <span className="flex items-center gap-2">
-            <MdOutlinePerson /> Full-stack developer
+            <MdOutlinePerson /> Software Engineer
           </span>
 
           <span className="hidden sm:block">: Open for collaborations</span>

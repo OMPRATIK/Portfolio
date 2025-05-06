@@ -25,10 +25,10 @@ function User() {
 
             <div>
               <p className="text-sm text-zinc-400 sm:text-base">
-                Full-stack Developer
+                Software Engineer
               </p>
 
-              <p className="flex items-center gap-2 text-xs text-zinc-400 sm:text-sm">
+              <p className="flex items-center gap-1.5 text-xs text-zinc-400 sm:text-sm">
                 <FaCalendar className="text-xs" /> 5 June 2004
               </p>
             </div>
