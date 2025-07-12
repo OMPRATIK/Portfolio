@@ -1,4 +1,3 @@
-import { HiPencilAlt } from "react-icons/hi";
 import { IoHome, IoPerson } from "react-icons/io5";
 import { MdArticle } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
@@ -8,7 +7,7 @@ const nav = [
   { name: "Home", icon: <IoHome />, link: "/" },
   { name: "Profile", icon: <IoPerson />, link: "/profile" },
   { name: "Projects", icon: <MdArticle />, link: "/projects" },
-  { name: "Blogs", icon: <HiPencilAlt />, link: "/blogs" },
+  // { name: "Blogs", icon: <HiPencilAlt />, link: "/blogs" },
 ];
 
 function NavBar() {

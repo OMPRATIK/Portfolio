@@ -1,11 +1,11 @@
 import { SiLeetcode } from "react-icons/si";
 import SubHeading from "../components/SubHeading";
-import LeetCodeCalendar from "leetcode-calendar";
+// import LeetCodeCalendar from "leetcode-calendar";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
-const theme = {
-  dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
-};
+// const theme = {
+//   dark: ["#383838", "#14532d", "#15803d", "#16a34a", "#22c55e"],
+// };
 
 function Leetcode() {
   return (
@@ -39,7 +39,7 @@ function Leetcode() {
             </li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <LeetCodeCalendar
             username="OMPRATIK" // Replace with your LeetCode username
             blockSize={12} // Optional: Size of each block in pixels (default: 15)
@@ -52,7 +52,7 @@ function Leetcode() {
             className="overflow-x-auto"
             // Optional: Inline styles for the calendar container
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
