@@ -6,7 +6,7 @@ const position = [12.961, 77.6387];
 
 const ICON = icon({
   iconUrl: "./marker.png",
-  iconSize: [25, 40],
+  iconSize: [18, 30],
 });
 
 function LocationMarker() {
