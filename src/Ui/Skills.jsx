@@ -17,13 +17,13 @@ function Skills() {
       <div className="mb-3 flex justify-between sm:mb-3">
         <SubHeading heading="Skills And Tools" icon={<FaTools />} />
         <div className="flex items-center gap-2">
-          <FaFilter className="text-sm text-zinc-400" />
+          <FaFilter className="text-xs text-zinc-400 sm:text-sm" />
           <select
             value={skillsType}
             onChange={(e) => setSkillsType(e.target.value)}
-            className="cursor-pointer rounded-md border-[1px] border-zinc-700 bg-zinc-800 px-2 py-1
-              text-sm text-zinc-400 focus:outline-none focus:ring-[0.5px] focus:ring-zinc-600
-              sm:text-base"
+            className="cursor-pointer rounded-md border-[1px] border-zinc-700 bg-zinc-800 px-1 py-0.5
+              text-xs text-zinc-400 focus:outline-none focus:ring-[0.5px] focus:ring-zinc-600
+              sm:px-2 sm:py-1 sm:text-base"
           >
             <option value="All">All</option>
             <option value="language">Languages</option>
