@@ -7,6 +7,7 @@ import Profile from "./Pages/Profile";
 import NavBar from "./Ui/NavBar";
 import ResizeScreenProvider from "./hooks/resizeScreen/ResizeScreenProvider";
 import { Toaster } from "react-hot-toast";
+import SmoothFollower from "./Ui/Cursor";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
         </Routes>
       </ResizeScreenProvider>
       <Toaster position="top-center" />
+      <SmoothFollower />
     </>
   );
 }

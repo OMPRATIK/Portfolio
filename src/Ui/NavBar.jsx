@@ -27,7 +27,7 @@ function NavBar() {
               <li className="flex gap-1 rounded-md px-2 py-2" key={name}>
                 <NavLink
                   to={link}
-                  className={`${activeTab === link ? "text-zinc-800 " + base : base}`}
+                  className={`text-xs sm:text-base ${activeTab === link ? "text-zinc-800 " + base : base}`}
                 >
                   {activeTab === link && (
                     <motion.div
@@ -46,7 +46,8 @@ function NavBar() {
                     "hover:text-zinc-400" }`}
                   >
                     <span className="text-xl sm:text-base">{icon}</span>
-                    <span className="hidden sm:block">{name}</span>
+                    {/* <span className="hidden sm:block">{name}</span> */}
+                    <span className="">{name}</span>
                   </div>
                 </NavLink>
               </li>

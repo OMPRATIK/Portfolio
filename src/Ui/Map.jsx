@@ -2,7 +2,7 @@ import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Time from "./Time";
 import { icon } from "leaflet";
-const position = [31.3223714, 75.4910179];
+const position = [12.961, 77.6387];
 
 const ICON = icon({
   iconUrl: "./marker.png",
@@ -21,6 +21,11 @@ function Map() {
         className="absolute z-[999] h-full w-full bg-gradient-to-b from-zinc-500/5 via-zinc-900/20
           to-zinc-900"
       ></div>
+      <img
+        src="./icons/india.svg"
+        alt="Indian flag"
+        className="absolute right-2 top-2.5 z-[999] h-4"
+      />
       <MapContainer
         center={{ lat: 20.2376, lng: 84.27 }}
         zoom={1}

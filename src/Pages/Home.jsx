@@ -1,8 +1,8 @@
 import About from "../Ui/About";
+import Exprience from "../Ui/Exprience";
 import Map from "../Ui/Map";
 import PinnedProjects from "../Ui/PinnedProjects";
 import Skills from "../Ui/Skills";
-import UpcomingPlans from "../Ui/UpcomingPlans";
 import User from "../Ui/User";
 
 function Home() {
@@ -13,9 +13,10 @@ function Home() {
       </div>
       <User />
       <About />
+      <Exprience />
       <Skills />
       <PinnedProjects />
-      <UpcomingPlans />
+      {/* <UpcomingPlans /> */}
     </div>
   );
 }
