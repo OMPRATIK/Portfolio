@@ -7,7 +7,7 @@ function About() {
   return (
     <section
       className="mb-6 flex flex-col gap-2 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2
-        sm:mb-10 sm:gap-4 sm:p-3"
+        sm:mb-8 sm:gap-4 sm:p-3"
     >
       <div className="flex items-center justify-between">
         <Socials />
