@@ -1,11 +1,12 @@
 function NotLive() {
   return (
-    <span
-      className="rounded-sm bg-red-600 px-1.5 py-0.5 align-top font-sans text-[10px] font-bold
-        uppercase tracking-wide text-red-200 sm:text-[12px]"
+    <div
+      className="flex items-center gap-1 rounded-[3.5px] bg-red-200 px-1 py-0.5 text-xs font-bold
+        uppercase tracking-wider text-red-900"
     >
-      not live
-    </span>
+      <div className="size-2.5 animate-pulse rounded-full bg-red-900" /> not
+      live
+    </div>
   );
 }
 

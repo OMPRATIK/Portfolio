@@ -1,11 +1,12 @@
 function OnProgress() {
   return (
-    <span
-      className="rounded-sm bg-blue-600 px-1.5 py-0.5 align-top font-sans text-[10px] font-bold
-        uppercase tracking-widest text-blue-200 sm:text-[12px]"
+    <div
+      className="flex items-center gap-1 rounded-[3.5px] bg-blue-200 px-1 py-0.5 text-xs
+        font-bold uppercase tracking-widest text-blue-900"
     >
-      on progress
-    </span>
+      <div className="size-2.5 animate-pulse rounded-full bg-blue-900" />{" "}
+      working
+    </div>
   );
 }
 

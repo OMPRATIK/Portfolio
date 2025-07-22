@@ -8,9 +8,10 @@ import Live from "../components/projectStatus/Live";
 import OnProgress from "../components/projectStatus/OnProgress";
 import { useState } from "react";
 
-import { FaRegEye, FaRegEyeSlash, FaStar } from "react-icons/fa";
+import { FaRegEye, FaRegEyeSlash, FaStar, FaUserFriends } from "react-icons/fa";
 import ProjectVideo from "./ProjectVideo";
-import { FaLink, FaLinkSlash } from "react-icons/fa6";
+import { FaLinkSlash } from "react-icons/fa6";
+import { GoLinkExternal } from "react-icons/go";
 
 function Project({
   image,
@@ -33,12 +34,17 @@ function Project({
       key={name}
     >
       <div>
-        <div className="mb-4 flex gap-4">
-          <img
-            src={image}
-            alt="Pinned project logo"
-            className="h-24 w-24 rounded-md sm:h-36 sm:w-36"
-          />
+        <div className="mb-2 flex gap-4">
+          <div
+            className="h-24 w-24 shrink-0 items-center justify-center rounded-md bg-zinc-700 p-0.5
+              sm:h-36 sm:w-36"
+          >
+            <img
+              src={image}
+              alt="Pinned project logo"
+              className="h-full w-full rounded-md"
+            />
+          </div>
 
           <div>
             <div className="">
@@ -78,10 +84,9 @@ function Project({
 
         <div>
           {contributors && (
-            <div className="mb-3 flex flex-col sm:flex-row sm:gap-2">
+            <div className="mb-3 flex items-center gap-3">
               <h4 className="font-semibold">
-                Contributors<span className="opacity-75">(</span>s
-                <span className="opacity-75">)</span>
+                <FaUserFriends className="text-blue-400" />
               </h4>
               <ul className="flex flex-wrap items-center gap-1 text-sm text-zinc-400">
                 {contributors.join(", ")}
@@ -101,10 +106,10 @@ function Project({
 
 function ProjectMetaData({ link, github, setOpenModal, openModal, video }) {
   return (
-    <div className="flex gap-2.5 text-xl">
+    <div className="flex items-center gap-2.5 text-xl">
       {link !== "" ? (
         <Link to={link} target="_blank" className="text-green-500">
-          <FaLink />
+          <GoLinkExternal />
         </Link>
       ) : (
         <FaLinkSlash className="text-red-400" />
@@ -120,9 +125,13 @@ function ProjectMetaData({ link, github, setOpenModal, openModal, video }) {
       <button
         onClick={() => setOpenModal((openModal) => !openModal)}
         disabled={!video}
-        className="text-yellow-200 hover:text-yellow-100 disabled:opacity-15"
+        className="disabled:opacity-15"
       >
-        {!openModal ? <FaRegEye /> : <FaRegEyeSlash />}
+        {!openModal ? (
+          <FaRegEye className="text-yellow-400 hover:text-yellow-300" />
+        ) : (
+          <FaRegEyeSlash className="text-yellow-400 hover:text-yellow-300" />
+        )}
       </button>
     </div>
   );
