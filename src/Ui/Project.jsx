@@ -10,7 +10,7 @@ import { useState } from "react";
 
 import { FaRegEye, FaRegEyeSlash, FaStar, FaUserFriends } from "react-icons/fa";
 import ProjectVideo from "./ProjectVideo";
-import { FaLinkSlash } from "react-icons/fa6";
+
 import { GoLinkExternal } from "react-icons/go";
 
 function Project({
@@ -80,7 +80,7 @@ function Project({
           </div>
         )}
 
-        <p className="mb-2 text-zinc-300 sm:hidden">{description}</p>
+        <p className="ext-zinc-300 mb-2 sm:hidden">{description}</p>
 
         <div>
           {contributors && (
@@ -112,27 +112,25 @@ function ProjectMetaData({ link, github, setOpenModal, openModal, video }) {
           <GoLinkExternal />
         </Link>
       ) : (
-        <FaLinkSlash className="text-red-400" />
+        <GoLinkExternal className="text-red-500" />
       )}
-      {github !== "" ? (
+
+      {github !== "" && (
         <Link to={github} target="_blank">
           <FiGithub className="text-blue-500 hover:text-blue-400" />
         </Link>
-      ) : (
-        <FiGithub className="text-red-400" />
       )}
-
-      <button
-        onClick={() => setOpenModal((openModal) => !openModal)}
-        disabled={!video}
-        className="disabled:opacity-15"
-      >
-        {!openModal ? (
-          <FaRegEye className="text-yellow-400 hover:text-yellow-300" />
-        ) : (
-          <FaRegEyeSlash className="text-yellow-400 hover:text-yellow-300" />
-        )}
-      </button>
+      {video ? (
+        <button
+          onClick={() => setOpenModal((openModal) => !openModal)}
+          disabled={!video}
+          className="text-yellow-200 hover:text-yellow-100 disabled:opacity-15"
+        >
+          {!openModal ? <FaRegEye /> : <FaRegEyeSlash />}
+        </button>
+      ) : (
+        <FaRegEye className="text-red-500" />
+      )}
     </div>
   );
 }
