@@ -2,7 +2,6 @@ import { useState } from "react";
 import CertificateModal from "./CertificateModal";
 import Skill from "./Skill";
 import PropTypes from "prop-types";
-import Highlight from "../components/Highlight";
 
 function Certificate({ certificate }) {
   const [openModal, setOpenModal] = useState(false);
