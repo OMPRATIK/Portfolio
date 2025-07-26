@@ -8,7 +8,7 @@ function Certificate({ certificate }) {
   const [openModal, setOpenModal] = useState(false);
   return (
     <div className="flex flex-col gap-1 rounded-md border-[1px] border-zinc-700 bg-zinc-800 p-2">
-      <div className="w-full overflow-hidden rounded-md">
+      <div className="w-full overflow-hidden rounded-md border-4 border-zinc-700">
         <img
           src={certificate.image}
           alt={`${certificate.name} certificate`}
@@ -16,19 +16,17 @@ function Certificate({ certificate }) {
           className="cursor-pointer rounded-md transition-transform ease-in-out hover:scale-110"
         />
       </div>
+
       <CertificateModal
         image={certificate.image}
         openModal={openModal}
         setOpenModal={setOpenModal}
       />
-      <div className="flex flex-grow flex-col gap-2">
-        <h3 className="text-xl font-semibold">
-          <Highlight>{certificate.name}</Highlight>
-        </h3>
-        <p className="text-sm opacity-75">{certificate.description}</p>
+      <div className="flex flex-grow flex-col gap-0">
+        <h3 className="text-xl">{certificate.name}</h3>
+        <p className="mb-2 text-sm opacity-75">{certificate.description}</p>
 
         <div className="flex flex-wrap items-center gap-1">
-          <p className="text-sm font-semibold">Skills: </p>
           {certificate.skills.map((skill) => (
             <Skill
               key={skill.name}

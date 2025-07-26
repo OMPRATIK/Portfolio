@@ -28,7 +28,8 @@ function Projects() {
             value={op}
             onChange={(e) => setOp(e.target.value)}
             className="cursor-pointer rounded-md border-[1px] border-zinc-700 bg-zinc-800 px-2 py-1
-              text-zinc-400 focus:outline-none focus:ring-[0.5px] focus:ring-zinc-600"
+              text-xs text-zinc-400 focus:outline-none focus:ring-[0.5px] focus:ring-zinc-600
+              sm:px-2 sm:py-1 sm:text-base"
           >
             {options.map((option) => (
               <option key={option} value={option}>
