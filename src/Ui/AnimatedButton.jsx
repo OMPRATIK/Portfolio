@@ -12,7 +12,7 @@ function AnimatedButton({ onClick }) {
   });
 
   return (
-    <div className="relative">
+    <div className="relative z-[999]">
       <button
         className="relative z-10 rounded-md bg-neutral-900 px-2 py-1 transition-colors duration-200
           hover:bg-neutral-800"
@@ -36,4 +36,5 @@ function AnimatedButton({ onClick }) {
 AnimatedButton.propTypes = {
   onClick: PropTypes.func,
 };
+
 export default AnimatedButton;
